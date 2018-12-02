@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <style>
+
+    body {
+      width: 70%;
+      height: 70%;
+    }
+
+  </style>
+  <link rel="stylesheet" href="revealjs-diagram.css">
+</head>
+<body>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="revealjs-diagram.js"></script>
+  <script>
+    var liGroup = 'Location Information (Jane Pierce)';
+    var addressing = 'Addressing ';
+    var topo = 'Topgraphy (inc remote-sensoring/lidar)';
+    var hydro = 'Hydrography';
+    var lds = 'Data Service';
+    var pr = 'Positioning + Resilience';
+
+    var treeData = {
+      name: liGroup,
+      x0: window.diagram.height / 2,
+      y0: 0,
+      children: []
+    };
+    
+    function addChildren_1() {
+      window.diagram.addItem(addressing, liGroup,treeData)();
+      window.diagram.addItem(topo, liGroup,treeData, treeData)();
+        window.diagram.addItem(lds, liGroup,treeData, treeData)();
+        window.diagram.addItem(hydro, liGroup,treeData, treeData)();
+        window.diagram.addItem(pr, liGroup,treeData, treeData)();
+     
+
+      
+    };
+
+
+    var _transitions = [
+      // window.diagram.addItem('GeoServer', 'SPA - Web front', treeData),
+      // window.diagram.addItem('WebService', 'SPA - Web front', treeData),
+      // window.diagram.addItem('OpenAM', 'SPA - Web front', treeData),
+      // window.diagram.addLink('WebService', 'OpenAM', treeData),
+      // window.diagram.addItem('Cognito', 'SPA - Web front', treeData),      
+      // // window.diagram.addItem('GeoServer', 'SPA - Web front', treeData),
+      // // window.diagram.addItem('OpenAM', 'SPA - Web front', treeData),
+      // // window.diagram.addItem('WebService', 'OpenAM', treeData),
+      // window.diagram.addItem('Cognito', 'SPA - Web front', treeData),
+
+
+      addChildren_1,
+      // window.diagram.addLink('WebService', 'Cognito', treeData),
+    ];
+
+    var _inverse_transitions = [
+      // window.diagram.removeItem('child 1', treeData),
+      // window.diagram.removeItem('child 2', treeData),
+      // window.diagram.removeItem('sub-child 1', treeData),
+      // window.diagram.removeItem('sub-child 2', treeData),
+    ];
+
+    // start the tree
+    window.diagram.register('basic', function() {
+      window.diagram.init(treeData);
+    });
+  </script>
+</body>
