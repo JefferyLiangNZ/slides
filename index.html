@@ -1,0 +1,491 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>AWS Development in Geodetic area</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/white.css"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="css/theme/white.css" id="theme">	
+		<style>
+		.reveal section.deep h2,
+		.reveal section.deep h3 {
+			text-transform: none
+		} 
+		.reveal section.deep p {   
+			margin: 0px 0;
+			color: #1b91ff;
+			text-align: left;
+			font-size: 1em;
+		}
+		.reveal a {
+			color: #9ca1a9;
+		}
+		.reveal section.deep h4 {   
+			margin: 0px 0;
+			text-align: left;
+		}
+		.reveal ul {list-style-type: circle;}
+		body {
+			height: 100%;
+		}
+		</style>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+        <div style="height: 80px;background: #024b57 url(images/backg.png) no-repeat right 0;">
+        </div>		
+		<div class="reveal">
+		<div class="slides">
+			<!-- ALL SLIDES GO HERE -->
+			<!-- Each section element contains an individual slide -->
+
+			<!-- Page 1 -->
+			<section>
+				<section class="">				
+				<p> AWS development works in geodetic area </p>
+				<img style="display:inline-block;width:60%;vertical-align:middle;" class="plain" data-src="images/LINZ-front.png" alt="Front">			
+				<p style="line-height: 1.2; font-size: 0.9em; text-align: right;"> Jeffery Liang, 2017-2018 </p>
+				<p style="line-height: 1.2; font-size: 0.9em; text-align: right;"> Location Information group, LINZ </p>
+				</section>				
+				<section>
+				<ul>
+				<li>  </li>
+				<li> A backend developer </li>
+				<li> Python, Ruby, Java and Golang</li>
+				<li> ES2015 /ES5</li>
+				<li> Chef, Ansible, Docker, Vagrant, and Terraform</li>
+				</ul>
+				</section>					
+			</section>
+
+			<section class="deep">
+		    <h3>Location Information Group (Jane Pierce is DCE)</h3>
+		    <ul>
+			    <li>Data Service</li>
+			    <li>Addressing</li>
+			    <li>Topgraphy</li>
+			    <li>Hydrography</li>
+			    <li>Positioning and Resilience</li>
+			</ul>
+			</section>
+
+			<!-- Page 2 -->
+			<section>
+				<section class="deep">				
+					<h2> Major systems at our workspace </h2>
+					<p > Enterprise central DB</p>			
+					<p > Bulk data extraction toolkits</p>
+					<p > LINZ data Service</p>
+					<p > Landonline system</p>
+					<p > Sub-systems (such as Geodetic system)</p>	
+				</section>
+	            <section class="fig-container"
+	                    data-fig-id="fig-diagram1"
+	                    data-file="diagram2.html">
+	            </section>	
+			</section>
+			<!-- <p>								<p>Landonline system holds cadastral, title, survey data, so surveyors, lawyers, and other professionals can securely search, lodge and update title dealings and survey data </p>
+			</p> -->
+
+
+			<!-- Page 3 -->
+
+
+			<!-- Page 5 -->
+
+			<section class="deep">
+				<h2>Sitelog Manager</h2>
+				<p>OpenSource Project of Geoscience Australia </p>
+				
+				<p>
+				<a href="https://sitelogprod-webservices.geodesy.linz.govt.nz/corsNetworks" >
+					@Cors Networks of PositioNZ
+				</a>
+				</p>
+				<p>
+				<a href="https://gnss-site-manager.geodesy.linz.govt.nz" >
+					@Sitelog Management Portal
+				</a>
+						</p>		
+
+			</section>
+
+			<!-- Page 6 -->			
+			<section>				
+				<section class="deep">
+					<h2>Customization/adaption I</h2>
+					<ul>
+						<li>
+							Use 'AWS Cognito Identity' + custom Lambda
+						</li>
+						<li>
+							Basic CLI for Cognito User Pool 
+						</li>						
+						<li>
+							Affiliated changes to AngularJS SPA and Webservice 
+						</li>
+					</ul>
+				</section>
+
+	            <section class="fig-container"
+	                    data-fig-id="fig-diagram1"
+	                    data-file="diagram1.html">
+	            </section>
+
+			</section>
+			
+			<section>
+				<section class="deep">
+
+					<h2>Customization /adaption II</h2>
+					<ul>
+						Add serveral deployment modules into Terraform
+						<li >Credstash toolkit/role/policy setup</li>
+						<li >Cloudfront setup/strengthen</li>
+						<li >Cognito user pool provision / UI Customization</li>
+						<li >Lambda Edge HTTP-Header</li>
+					</ul>
+				</section>
+				<section class="deep">
+         			<img style="display:inline-block;width:50%;vertical-align:middle;" class="plain" data-src="images/SitelogManager.svg" alt="Deployment step2">
+         			<p class=" ">Production deployment of Sitelog Manager  </p>
+        		</section>				
+				<section class="deep">
+         			<img style="display:inline-block;width:50%;vertical-align:middle;" class="plain" data-src="images/sitelog.png" alt="Deployment step2">
+         			<p class=" ">VPC, Network, Asg/ELB, CodeDeploy Setup </p>
+        		</section>
+				<section class="deep">
+         			<img style="display:inline-block;width:100%;vertical-align:middle;" class="plain" data-src="images/sitelog.App.svg" alt="Deployment step2">
+         			<p >Lambda, SNS, S3, CloudFront, Cognito, Role-Policy Setup </p>
+        		</section>        		
+			</section>
+
+			<section>
+				<section>
+				<h2 style="color: grey"> >> Warning: some biased opinions about </h2>
+				<h2>AWS tool</h2>
+				</section>
+				<section class="deep">
+					
+					<pre style="zoom: 1.2;" ><code class="python"># Terraform is soooo Cool!!
+Especially `Terraform state / plan` command
+
+"Terraform state surgery" to Cloud deployment 
+is similar to
+"Git interactive rebashing" to Git repository manipulation
+					</code></pre>
+
+					<pre style="zoom: 1.2;" ><code class="python">#CloudwatchLogs is sooo hard to understand...
+
+awslogs get [cloudwatchlogs] -S -G --start [start_time] --end [end_time] \
+| egrep --color 'ERROR|WARNING|RequestId' \ 
+| pv --quiet --line-mode --rate-limit 1
+					</code></pre>
+ 
+
+				</section>	
+					
+			</section>
+
+			<section>
+				<section class="deep">
+					<h2>GNSS Archive</h2>
+					<p>What does it mean to our customer? check</p><a href='vid/Peek-1.gif'> this out</a>
+				</section>		
+			</section>
+
+			<section>
+				<section class="deep">
+					<h2>GNSS Archive</h2>
+					<p class=" fade-in">Q: Run out of disk space </p>
+					<p class=" fade-in">Sol: Upload into Amazon</p>
+					<p data-fragment-index="1" class="fragment fade-in">Anyting else?</p>
+					<ul>
+					<li data-fragment-index="1" class="fragment fade-in">
+						How about future files(Poll-And-Pull? or push by others?)
+					</li>
+					<li  data-fragment-index="1" class="fragment fade-in">
+						How to continously pull files within date range?
+					</li>
+					<li  data-fragment-index="1" class="fragment fade-in">
+						Who can access? how is security?
+					</li>
+					<li  data-fragment-index="1" class="fragment fade-in">
+						On and on ...
+					</li>
+					</ul>
+				</section>
+
+				<section class="deep">
+					<h3> VISION </h3>
+					<p>The authoritative GNSS data management system for
+					 storing 
+					 searching
+					 sharing
+					</p>
+					<h3 data-fragment-index="1" class="fragment fade-in"> Key components </h3>
+					<p data-fragment-index="1" class="fragment fade-in"> Backend: S3 file index, S3 files' tagging/meta-attributes</p>
+					<p data-fragment-index="1" class="fragment fade-in"> Frontend: API Gateway, Cloudfront with Custom Policy, A static website
+				</section>				
+			</section>
+
+	<!-- meets contract obligations (data completeness, how soon the data arrives) -->
+			<section>
+
+				<section class="deep">
+					<h3> Case I </h3>
+						<p>GNS Science - PositioNZ station data (per contract)</p>
+						<p>Pull data and monitor/verify their quality.</p>
+						<ul>
+						<li>Continuously source from FTP</li>
+						<li>Admin could inquiry metadata (ad-hoc SQL) </li>
+						</ul>
+				</section>
+				<section class="deep">
+					<h3> Case II </h3>
+						<p>Volunteerily provided by private/public vendors  UNAVCO</p>
+						<p>Pull data and try improving data quality.</p>
+						<ul>
+						<li>Source data from FTP (owned by them)</li>
+						<li>Pre-process them before storing in the Archive </li>
+						<li>Some mustn't get published (at once) </li>
+						</ul>
+				</section>				
+				<section class="deep">
+					<img style="display:inline-block;width:100%;vertical-align:middle;" class="plain" data-src="images/GNSS_Archive.svg" >
+				</section>					
+			</section>
+
+			<section >
+				<section class="deep">
+					<h3> 1.Archive sync (pulling data for now) </h3>
+					 <img style="display:inline-block;width:45%;vertical-align:middle;" class="plain" data-src="images/archive_sync.png" >
+					<p> FTP=>S3; S3=>S3</p>
+				</section>
+				<section class="deep">
+					<h3> 2.S3 Catalog </h3>	
+					<img style="display:inline-block;width:45%;vertical-align:middle;" class="plain" data-src="images/s3-catalogue.png" >
+					<p > Parse header or query sitelog </p>
+				</section>
+				<section class="deep">
+					<h3> 3.Data converting </h3>
+					 <img style="display:inline-block;width:45%;vertical-align:middle;" class="plain" data-src="images/garchive-converter.png" >
+					<p > Compression or decimation of RINEX files</p>
+				</section>
+				<section class="deep">
+					<h2> 4.Lambda, RDS and VPC </h2>
+					<ul>
+					<li> Mirrored catalogs (file-header/ sitelog-query)</li>					
+					<li> vpce-interface to S3 </li>
+					<li> Nat-Gateway and Bastion-Host </li>
+					</ul>
+					<br/>
+					
+				</section>
+
+				<section class="deep">
+					<h3>Some patterns that I used in this project:</h3>
+					<p style="color: grey">
+						FAN-OUT: use SNS ; So SQS Queue, Kinesis, Lambda could all get triggered by the same message/event
+					</p>
+					<p>
+						Decouple and FAN-IN: use SQS (for decoupling domain-level lambda and utility-level lambda)
+					</p>
+					<p style="color: grey">						
+						FAN-IN: use utility-level lambda Lamda invocations 
+					</p>
+				</section>
+				<section class="deep">
+					<h3>A little learning from Serverless</h3>
+					<p>
+
+						>> Lambda's Throttling/Concurrency 
+					</p>
+					<p style="color: grey">
+						>> Lambda's termination
+					</p>
+					<p >
+						>> Lamda failures (Timeout, Deadletter failure, DB credit Drain out )
+					</p>
+					<p style="color: grey">
+						>> On-demand services(in terms of billing): Lambda, 
+						  RDS => DynamoDB/ Aurora Serverless
+					</p>
+					<p >
+						>> Lambda retry (explicitly invoke, or invoked by other services)
+					</p>
+				</section>				
+					<section class="deep">
+
+						<h3>SNS can be used for </h3>
+						<ul>
+							<li>real-time event </li>
+							<li>
+								manual triggering; </li>
+							<li> DRY_RUN triggering </li>
+							
+					<h2 style="color:grey" class="fragment"> When working on this, I hope to these could happen:  ==> </h2>
+				</section>	
+				
+				<section class="deep">
+					<h3>Terraform should collaborate with Serverless:</h3>
+					<p>
+						 1. Build custom Lambda container image;
+					</p>
+					<p>
+						 2. Automatically handle "system library/dependency packaging" ;
+					</p>
+					<p>						
+						 3. Partially update  lambda deployment package; (probably this improvement should happen to CodeDeploy)
+					</p>
+					<p style="color: grey"> ==>  PLEASE, Because I just need to update user-level source code? Not those dependent packages JARS or LIBS </p>
+				</section>								
+			</section>
+
+			<section>							
+				<section class="deep">
+					<p> Interfacing end-user</p>					
+					<img style="display:inline-block;width:65%;vertical-align:middle;" class="plain" data-src="images/front-End.svg">
+
+					<ul>
+					</ul>
+				</section>
+				<section class="deep">
+					
+					<section data-gif="repeat"><h3> Web file tree - (un)authenticated  </h3><img style="border-width: 0.01px;" src="vid/Peek-1.gif" /></section>
+				</section>
+				<section>
+					
+					<section class="deep" data-gif="repeat"><h3> Web Map with a time slider - On hold </h3>
+						<img style="border-width: 0.01px; width: 70%" src="vid/Peek-3.gif" /></section>
+				</section>
+				<section>
+
+					<p> Standalone EXE (un)authenticated - On hold<br/>
+					Cognito Identity Provider (STS + IAM Role) </p>
+					<img style="border-width: 0.01px; width: 50%" src="vid/Peek-2.gif" />
+				</section>
+				<section class="deep">
+					<h4> Search /Select toolbar <br> including date range, stations, Record types, etc</h4>
+					<h4> -- Scheduled, below is just a dummy webpage </h3>
+					<img style="border-width: 0.01px; width: 100%" src="vid/Peek-5.gif" />
+				</section>	
+				<section class="deep">
+					<h3> Simple HTTP(S) requests without AWS-Signer (Curl or Any HTTP Library) <br/> - active developing </h3>
+					<p> Public content passthrough by Cloudfront  </h2>
+					<p> Protected content via Cloudfront <br>   ==> custom policy + Lambda + API GW </p>
+				</section>			
+			</section>
+
+			<section>
+				<img style="border-width: 0.01px; width: 95%" src="images/geodetic_STEP.jpg" /></section>
+			</section>
+
+			<section>
+				<textarea style="height: 30vw; max-height: 50vw; width: 80%; font-size: 0.6em">
+* Your opinion matters to me
+
+** Security and DR related practices 
+- such as CIS benchemark for hardening Docker/Linux os;
+- Incremental backup process in AWS S3 or Glacier;
+- Bastion-Server access to EC2 or Use SSM for random commands, or batch jobs;
+- Securing access to Console, Developer credential, using MFA;
+- How do GA enforce the rotation of RSA-Keypair/Deployment secrets in Vault automatically;
+- How do GA enable Developer's Security Session Token for Developers, 
+- What are the critical scenarioes do GA enforce MFA (like delete Bucket, files)?; 
+- which "conditions"(in policy configuration) you have ever used for restricting S3, SNS, EC2, Lambda;
+- What's your key auditing areas for Cloudtrail/AWS Config;
+
+** DevOps /Production Monitoring
+(Implement RDS changset capture -- Row level change;
+(Monitoring Cloudwatch Metrics, also disk space/CPU credits;
+(Monitoring Application Logs;
+(Mock environment for unittest;
+(important metrics/ keywords to check/filter;
+(Infra test specs;
+
+** Management
+(Resource Naming, Tagging, Cost Tagging;
+(Identity or IAM best practices;
+(How you manage/group servics like SecurityGroup, Role, are there hiearchy? ;
+(Multi-Stage resource separation;
+
+** Authentication,Authorization
+( Integration such as AzureAD, GooglePlus;
+(JWT, API Key, User cred, Signed HTTP Request;
+
+** What's your Do's, Don'ts, Gotchas and lessons that you have learned over the years
+or your curated cheatsheets
+			</textarea>
+			</section>
+
+			<section>
+				<p> Q and A</p>
+				<img style="border-width: 0.01px; width: 75%" src="images/end_page.png" /></section>
+			</section>
+
+			<section>
+				<section class="deep">
+					<h2> LINZ AWS Account</h2>
+					<p > Separate account but only one for each BU  </p>
+					<p > Stages (Dev/Uat/Prod) under one account </p>
+				</section>
+				<section class="deep">
+					<h2> Geodetic Account</h2>
+					<p class=" highlight-current-blue"> - Separate VPC for each stage/project  </p>
+					<p class="  highlight-current-blue"> - AWS Config; Basic account support (vendor)</p>
+					<p class="  highlight-current-blue"> - Most resources are separated between projects <p>
+				</section>
+			</section>
+
+			<!-- Page 4 -->
+			<section class="deep">
+				<h2> Related Development </h2>
+				<p> Since Nov 2017 </p>
+				<p class=" highlight-current-blue"> - Sitelog Manager</p>
+				<p class=" highlight-current-blue"> - Experiment of BDE Uploader in AWS</p>
+				<p class=" highlight-current-blue"> - GNSS data archive</p>
+				<p class=" highlight-current-blue"> - Geodetic System Migration(Lift-And-Left)</p>
+			</section>			
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				history: true,
+				slideNumber: true,
+				center: false,
+				zoomKey: 'shift',
+				dependencies: [
+                    { src: 'https://d3js.org/d3.v4.min.js' },
+                    { src: 'plugin/d3js/d3js.js' },
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					// Zoom in and out with Alt+click
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

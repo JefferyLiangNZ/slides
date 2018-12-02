@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <style>
+
+    body {
+      width: 100%;
+      height: 100%;
+      background-color: #FFFFFF;
+    }
+    .node rect {
+      fill: #024b57 !important;
+    }
+
+  </style>
+  <link rel="stylesheet" href="revealjs-diagram.css">
+</head>
+<body>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="revealjs-diagram.js"></script>
+  <script>
+    var lol = 'Landonline SYS/DB';
+    var treeData = {
+      name: lol,
+      x0: window.diagram.height / 2,
+      y0: 0,
+      children: []
+    };
+
+
+
+    function step_add() {
+      window.diagram.addItem(dbdump, lol, treeData)();
+      window.diagram.addItem(postgres, dbdump, treeData)();
+      setTimeout(function(){
+        window.diagram.addItem(lds, postgres, treeData)();
+        window.diagram.addItem('Sub system #1 - (... System)', postgres, treeData)();
+        window.diagram.addItem('Sub system #2 - (... System) ', postgres, treeData)();  
+        window.diagram.addItem('Sub system #n - (Geodetic System)', postgres, treeData)(); 
+      }, 900);                       
+    }
+
+    function step1_add() {
+      window.diagram.addItem(dbdump, lol, treeData)();
+      window.diagram.addItem(postgres, dbdump, treeData)();
+
+    }
+
+    function step2_add() {
+      window.diagram.addItem(lds_db, postgres, treeData)();
+      window.diagram.addItem(lds, lds_db, treeData)();
+    }
+
+    function step3_add() {
+      window.diagram.addItem(cadas, postgres, treeData)();
+      window.diagram.addItem(topo, postgres, treeData)();
+      window.diagram.addLink(cadas, lds, treeData)();
+      window.diagram.addLink(topo, lds, treeData)();     
+    }
+
+    function step4_add() {
+      window.diagram.addItem(geo_db, postgres, treeData)();
+
+  
+      setTimeout(function(){
+        window.diagram.addItem(geo_script, geo_db, treeData)();    
+        window.diagram.addItem(geo_rest, geo_db, treeData)();        
+        window.diagram.addLink(geo_script, geo_rest, treeData)();
+        window.diagram.addItem(geo_mob, geo_rest, treeData)();
+      }, 800);   
+    }
+
+    function step1_remove() {
+      window.diagram.removeLink(cadas, lds, treeData)(); 
+      window.diagram.removeItem(cadas,  treeData)();
+      window.diagram.removeLink(topo, lds, treeData)();   
+      window.diagram.removeItem(topo, treeData)();
+
+      window.diagram.removeItem(geo_mob, treeData)(); 
+      window.diagram.removeLink(geo_script, geo_rest)();
+      window.diagram.removeItem(geo_script, treeData)();
+      window.diagram.removeItem(geo_rest,treeData)();
+      window.diagram.removeItem(geo_db,treeData)();
+
+      window.diagram.addItem(dbdump_store ,dbdump, treeData)();
+    }
+
+    var dbdump = 'DB Dumper(BDE)';
+    var postgres = '(central)Postgres';
+    var postgres_aws = 'Postgres-DB(AWS) + BDE loader'
+    var dbdump_store = 'Dumper store(S3 Bucket)';
+    var lds = 'LINZ Data Services';
+    var lds_db = 'LDS Postgres-Db'
+    var topo = 'Topo Desktop GIS(etc...)';
+    var cadas = 'Cadastral/Survey GIS(LINZ Map)';
+    var geo_script = 'Geod-Web App(& Scripts)';
+    var geo_rest = 'Geod-RESTful-API';
+    var geo_mob = 'Geod-Mobile App';
+    var geo_db = 'Geod-DB(s)';
+
+
+    var _transitions = [
+      step_add,
+      // step1_add,
+      // step2_add,
+      // step3_add,
+      // step4_add,
+      // step1_remove,
+
+
+      // window.diagram.addItem(postgres_aws ,dbdump_store, treeData),
+      // // window.diagram.addItem(lds_db ,postgres_aws, treeData),
+      // window.diagram.addItem(geo_db ,dbdump_store, treeData),
+
+
+      // window.diagram.addItem(geo_script, geo_db, treeData),      
+      // window.diagram.addItem(geo_rest, geo_db, treeData),
+      // window.diagram.addLink(geo_script, geo_rest, treeData),
+      // window.diagram.addItem(geo_mob, geo_rest, treeData),
+
+      // window.diagram.addLink(postgres_aws, geo_db, treeData),
+      // window.diagram.removeLink(geo_db, dbdump_store, treeData),
+      // window.diagram.removeItem(lds, lds_db,, postgres,  treeData),
+
+
+
+
+      // window.diagram.addLink('child 1', 'tail', treeData),
+      // window.diagram.addLink('child 3', 'tail', treeData)
+    ];
+
+    var _inverse_transitions = [
+      // window.diagram.removeItem('child 1', treeData),
+      // window.diagram.removeItem('child 2', treeData),
+      // window.diagram.removeItem('child 3', treeData),
+      // window.diagram.removeItem('tail', treeData),
+      // window.diagram.removeLink('child 1', 'tail', treeData),
+      // window.diagram.removeLink('child 3', 'tail', treeData)
+    ];
+
+    // start the tree
+    window.diagram.register('closed', function() {
+      window.diagram.init(treeData);
+    });
+  </script>
+</body>

@@ -1,0 +1,23 @@
+.node {
+  cursor: pointer; }
+
+.node rect {
+  fill: #333333;
+  stroke: #f6a821;
+  stroke-width: 1.5px; }
+
+.oval {
+  width: 160px;
+  height: 80px;
+  background: #a84909;
+  border-radius: 50%;
+}
+
+.node text {
+  font: 10px sans-serif;
+  fill: #fff; }
+
+.link, .link-alone {
+  fill: none;
+  stroke: #f6a821;
+  stroke-width: 1.5px; }

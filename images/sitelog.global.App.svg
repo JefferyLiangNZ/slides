@@ -1,0 +1,869 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0.00 0.00 2781.00 873.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 869)">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-869 2777,-869 2777,4 -4,4"></polygon>
+<g id="clust2" class="cluster">
+</g>
+<g id="clust3" class="cluster">
+</g>
+<g id="clust9" class="cluster">
+</g>
+<!-- [root] aws_iam_instance_profile.GD&#45;GeodesyWebServicesD&#45;WebServerRole -->
+<g id="node_51" class="node">
+<polygon fill="none" stroke="black" points="1091,-595 1091,-610 1287,-610 1287,-595 1091,-595"></polygon>
+<text text-anchor="start" x="1125.5" y="-600.6" font-family="courier new" font-size="8.00">aws_iam_instance_profile</text>
+<polygon fill="none" stroke="black" points="1091,-580 1091,-595 1287,-595 1287,-580 1091,-580"></polygon>
+<text text-anchor="start" x="1094" y="-585.6" font-family="courier new" font-size="8.00">GD-GeodesyWebServicesD-WebServerRole</text>
+</g>
+<!-- [root] aws_iam_role.GD&#45;GeodesyWebServicesD&#45;WebServerRole -->
+<g id="node_59" class="node">
+<polygon fill="none" stroke="black" points="1299,-506.5 1299,-521.5 1495,-521.5 1495,-506.5 1299,-506.5"></polygon>
+<text text-anchor="start" x="1365" y="-512.1" font-family="courier new" font-size="8.00">aws_iam_role</text>
+<polygon fill="none" stroke="black" points="1299,-491.5 1299,-506.5 1495,-506.5 1495,-491.5 1299,-491.5"></polygon>
+<text text-anchor="start" x="1302" y="-497.1" font-family="courier new" font-size="8.00">GD-GeodesyWebServicesD-WebServerRole</text>
+</g>
+<!-- [root] aws_iam_instance_profile.GD&#45;GeodesyWebServicesD&#45;WebServerRole&#45;&gt;[root] aws_iam_role.GD&#45;GeodesyWebServicesD&#45;WebServerRole -->
+<g id="edge_94" class="edge">
+<path fill="none" stroke="black" d="M1230.09,-576.91C1263.57,-562.99 1310.97,-543.277 1346.71,-528.415"></path>
+<polygon fill="black" stroke="black" points="1348.1,-531.626 1355.99,-524.554 1345.41,-525.162 1348.1,-531.626"></polygon>
+</g>
+<!-- [root] aws_iam_policy_attachment.GD&#45;AWSCodeDeployRole&#45;policy&#45;attachment -->
+<g id="node_52" class="node">
+<polygon fill="none" stroke="black" points="364,-691 364,-706 570,-706 570,-691 364,-691"></polygon>
+<text text-anchor="start" x="401" y="-696.6" font-family="courier new" font-size="8.00">aws_iam_policy_attachment</text>
+<polygon fill="none" stroke="black" points="364,-676 364,-691 570,-691 570,-676 364,-676"></polygon>
+<text text-anchor="start" x="367" y="-681.6" font-family="courier new" font-size="8.00">GD-AWSCodeDeployRole-policy-attachment</text>
+</g>
+<!-- [root] aws_iam_policy_attachment.GD&#45;AWSCodeDeployRole&#45;policy&#45;attachment&#45;&gt;[root] aws_iam_instance_profile.GD&#45;GeodesyWebServicesD&#45;WebServerRole -->
+<g id="edge_95" class="edge">
+<path fill="none" stroke="black" d="M525.618,-672.974C542.708,-668.514 561.495,-664.093 579,-661 742.571,-632.093 785.878,-643.047 951,-625 993.527,-620.352 1040.27,-614.762 1080.98,-609.735"></path>
+<polygon fill="black" stroke="black" points="1081.43,-613.207 1090.93,-608.504 1080.57,-606.26 1081.43,-613.207"></polygon>
+</g>
+<!-- [root] aws_iam_role.GD&#45;CodeDeploy -->
+<g id="node_58" class="node">
+<polygon fill="none" stroke="black" points="868,-595 868,-610 943,-610 943,-595 868,-595"></polygon>
+<text text-anchor="start" x="873.5" y="-600.6" font-family="courier new" font-size="8.00">aws_iam_role</text>
+<polygon fill="none" stroke="black" points="868,-580 868,-595 943,-595 943,-580 868,-580"></polygon>
+<text text-anchor="start" x="871" y="-585.6" font-family="courier new" font-size="8.00">GD-CodeDeploy</text>
+</g>
+<!-- [root] aws_iam_policy_attachment.GD&#45;AWSCodeDeployRole&#45;policy&#45;attachment&#45;&gt;[root] aws_iam_role.GD&#45;CodeDeploy -->
+<g id="edge_96" class="edge">
+<path fill="none" stroke="black" d="M530.225,-672.963C546.105,-668.868 563.141,-664.631 579,-661 677.318,-638.489 793.334,-616.419 857.059,-604.68"></path>
+<polygon fill="black" stroke="black" points="858,-608.066 867.204,-602.818 856.736,-601.181 858,-608.066"></polygon>
+</g>
+<!-- [root] aws_iam_policy_attachment.GD&#45;AWSCognitoPowerUser&#45;policy&#45;attachment -->
+<g id="node_53" class="node">
+<polygon fill="none" stroke="black" points="589,-691 589,-706 806,-706 806,-691 589,-691"></polygon>
+<text text-anchor="start" x="631.5" y="-696.6" font-family="courier new" font-size="8.00">aws_iam_policy_attachment</text>
+<polygon fill="none" stroke="black" points="589,-676 589,-691 806,-691 806,-676 589,-676"></polygon>
+<text text-anchor="start" x="592" y="-681.6" font-family="courier new" font-size="8.00">GD-AWSCognitoPowerUser-policy-attachment</text>
+</g>
+<!-- [root] aws_iam_policy_attachment.GD&#45;AWSCognitoPowerUser&#45;policy&#45;attachment&#45;&gt;[root] aws_iam_instance_profile.GD&#45;GeodesyWebServicesD&#45;WebServerRole -->
+<g id="edge_97" class="edge">
+<path fill="none" stroke="black" d="M762.971,-672.936C779.878,-668.798 798.069,-664.547 815,-661 904.048,-642.343 1005.82,-624.905 1080.69,-612.798"></path>
+<polygon fill="black" stroke="black" points="1081.29,-616.246 1090.61,-611.2 1080.18,-609.335 1081.29,-616.246"></polygon>
+</g>
+<!-- [root] aws_iam_policy_attachment.GD&#45;AmazonEC2ReadOnlyAccess&#45;policy&#45;attachment -->
+<g id="node_54" class="node">
+<polygon fill="none" stroke="black" points="824,-691 824,-706 1062,-706 1062,-691 824,-691"></polygon>
+<text text-anchor="start" x="877" y="-696.6" font-family="courier new" font-size="8.00">aws_iam_policy_attachment</text>
+<polygon fill="none" stroke="black" points="824,-676 824,-691 1062,-691 1062,-676 824,-676"></polygon>
+<text text-anchor="start" x="827" y="-681.6" font-family="courier new" font-size="8.00">GD-AmazonEC2ReadOnlyAccess-policy-attachment</text>
+</g>
+<!-- [root] aws_iam_policy_attachment.GD&#45;AmazonEC2ReadOnlyAccess&#45;policy&#45;attachment&#45;&gt;[root] aws_iam_instance_profile.GD&#45;GeodesyWebServicesD&#45;WebServerRole -->
+<g id="edge_98" class="edge">
+<path fill="none" stroke="black" d="M987.549,-672.977C1028.96,-657.155 1090.72,-633.554 1134.93,-616.66"></path>
+<polygon fill="black" stroke="black" points="1136.28,-619.894 1144.37,-613.055 1133.78,-613.355 1136.28,-619.894"></polygon>
+</g>
+<!-- [root] aws_iam_policy_attachment.GD&#45;AmazonRDSFullAccess&#45;policy&#45;attachment -->
+<g id="node_55" class="node">
+<polygon fill="none" stroke="black" points="1081,-691 1081,-706 1298,-706 1298,-691 1081,-691"></polygon>
+<text text-anchor="start" x="1123.5" y="-696.6" font-family="courier new" font-size="8.00">aws_iam_policy_attachment</text>
+<polygon fill="none" stroke="black" points="1081,-676 1081,-691 1298,-691 1298,-676 1081,-676"></polygon>
+<text text-anchor="start" x="1084" y="-681.6" font-family="courier new" font-size="8.00">GD-AmazonRDSFullAccess-policy-attachment</text>
+</g>
+<!-- [root] aws_iam_policy_attachment.GD&#45;AmazonRDSFullAccess&#45;policy&#45;attachment&#45;&gt;[root] aws_iam_instance_profile.GD&#45;GeodesyWebServicesD&#45;WebServerRole -->
+<g id="edge_99" class="edge">
+<path fill="none" stroke="black" d="M1189,-672.759C1189,-658.978 1189,-639.4 1189,-623.465"></path>
+<polygon fill="black" stroke="black" points="1192.5,-623.132 1189,-613.132 1185.5,-623.132 1192.5,-623.132"></polygon>
+</g>
+<!-- [root] aws_iam_policy_attachment.GD&#45;AmazonS3FullAccess&#45;policy&#45;attachment -->
+<g id="node_56" class="node">
+<polygon fill="none" stroke="black" points="1316,-691 1316,-706 1527,-706 1527,-691 1316,-691"></polygon>
+<text text-anchor="start" x="1355.5" y="-696.6" font-family="courier new" font-size="8.00">aws_iam_policy_attachment</text>
+<polygon fill="none" stroke="black" points="1316,-676 1316,-691 1527,-691 1527,-676 1316,-676"></polygon>
+<text text-anchor="start" x="1319" y="-681.6" font-family="courier new" font-size="8.00">GD-AmazonS3FullAccess-policy-attachment</text>
+</g>
+<!-- [root] aws_iam_policy_attachment.GD&#45;AmazonS3FullAccess&#45;policy&#45;attachment&#45;&gt;[root] aws_iam_instance_profile.GD&#45;GeodesyWebServicesD&#45;WebServerRole -->
+<g id="edge_100" class="edge">
+<path fill="none" stroke="black" d="M1378.99,-672.977C1340.1,-657.222 1282.18,-633.752 1240.51,-616.872"></path>
+<polygon fill="black" stroke="black" points="1241.67,-613.566 1231.09,-613.055 1239.05,-620.054 1241.67,-613.566"></polygon>
+</g>
+<!-- [root] aws_iam_policy_attachment.GD&#45;AmazonSNSFullAccess&#45;policy&#45;attachment -->
+<g id="node_57" class="node">
+<polygon fill="none" stroke="black" points="1545,-691 1545,-706 1762,-706 1762,-691 1545,-691"></polygon>
+<text text-anchor="start" x="1587.5" y="-696.6" font-family="courier new" font-size="8.00">aws_iam_policy_attachment</text>
+<polygon fill="none" stroke="black" points="1545,-676 1545,-691 1762,-691 1762,-676 1545,-676"></polygon>
+<text text-anchor="start" x="1548" y="-681.6" font-family="courier new" font-size="8.00">GD-AmazonSNSFullAccess-policy-attachment</text>
+</g>
+<!-- [root] aws_iam_policy_attachment.GD&#45;AmazonSNSFullAccess&#45;policy&#45;attachment&#45;&gt;[root] aws_iam_instance_profile.GD&#45;GeodesyWebServicesD&#45;WebServerRole -->
+<g id="edge_101" class="edge">
+<path fill="none" stroke="black" d="M1586.38,-672.945C1569.65,-668.85 1551.7,-664.618 1535,-661 1455.72,-643.825 1365.64,-626.987 1297.28,-614.754"></path>
+<polygon fill="black" stroke="black" points="1297.81,-611.294 1287.35,-612.983 1296.58,-618.185 1297.81,-611.294"></polygon>
+</g>
+<!-- [root] provider.aws -->
+<g id="node_79" class="node">
+<polygon fill="none" stroke="black" points="1373,-182.5 1373,-197.5 1422,-197.5 1422,-182.5 1373,-182.5"></polygon>
+<text text-anchor="start" x="1376" y="-188.1" font-family="courier new" font-size="8.00">provider</text>
+<polygon fill="none" stroke="black" points="1373,-167.5 1373,-182.5 1422,-182.5 1422,-167.5 1373,-167.5"></polygon>
+<text text-anchor="start" x="1389.5" y="-173.1" font-family="courier new" font-size="8.00">aws</text>
+</g>
+<!-- [root] aws_iam_role.GD&#45;CodeDeploy&#45;&gt;[root] provider.aws -->
+<g id="edge_102" class="edge">
+<path fill="none" stroke="black" d="M929.103,-576.967C964.658,-549.64 1027,-492.336 1027,-426.5 1027,-426.5 1027,-426.5 1027,-343.5 1027,-199.627 1265.6,-183.646 1359.59,-182.932"></path>
+<polygon fill="black" stroke="black" points="1359.8,-186.431 1369.79,-182.911 1359.79,-179.431 1359.8,-186.431"></polygon>
+</g>
+<!-- [root] aws_iam_role.GD&#45;GeodesyWebServicesD&#45;WebServerRole&#45;&gt;[root] provider.aws -->
+<g id="edge_103" class="edge">
+<path fill="none" stroke="black" d="M1397,-488.188C1397,-435.212 1397,-275.004 1397,-210.67"></path>
+<polygon fill="black" stroke="black" points="1400.5,-210.507 1397,-200.507 1393.5,-210.507 1400.5,-210.507"></polygon>
+</g>
+<!-- [root] aws_s3_bucket.log_bucket -->
+<g id="node_60" class="node">
+<polygon fill="none" stroke="black" points="1904,-691 1904,-706 1979,-706 1979,-691 1904,-691"></polygon>
+<text text-anchor="start" x="1907" y="-696.6" font-family="courier new" font-size="8.00">aws_s3_bucket</text>
+<polygon fill="none" stroke="black" points="1904,-676 1904,-691 1979,-691 1979,-676 1904,-676"></polygon>
+<text text-anchor="start" x="1915" y="-681.6" font-family="courier new" font-size="8.00">log_bucket</text>
+</g>
+<!-- [root] aws_s3_bucket.log_bucket&#45;&gt;[root] provider.aws -->
+<g id="edge_104" class="edge">
+<path fill="none" stroke="black" d="M1917.57,-672.827C1910.59,-668.391 1902.74,-664.02 1895,-661 1812.49,-628.801 1768.92,-679.361 1699,-625 1653.63,-589.725 1645,-564.973 1645,-507.5 1645,-507.5 1645,-507.5 1645,-343.5 1645,-244.321 1503.22,-203.65 1434.06,-189.711"></path>
+<polygon fill="black" stroke="black" points="1434.49,-186.23 1424.01,-187.771 1433.17,-193.104 1434.49,-186.23"></polygon>
+</g>
+<!-- [root] var.tags -->
+<g id="node_82" class="node">
+<polygon fill="none" stroke="black" points="1724,-595 1724,-610 1752,-610 1752,-595 1724,-595"></polygon>
+<text text-anchor="start" x="1730" y="-600.6" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="1724,-580 1724,-595 1752,-595 1752,-580 1724,-580"></polygon>
+<text text-anchor="start" x="1727" y="-585.6" font-family="courier new" font-size="8.00">tags</text>
+</g>
+<!-- [root] aws_s3_bucket.log_bucket&#45;&gt;[root] var.tags -->
+<g id="edge_105" class="edge">
+<path fill="none" stroke="black" d="M1916.39,-672.754C1909.66,-668.524 1902.22,-664.276 1895,-661 1843.9,-637.823 1823.67,-651.091 1774,-625 1770.85,-623.345 1767.71,-621.393 1764.67,-619.297"></path>
+<polygon fill="black" stroke="black" points="1766.56,-616.336 1756.46,-613.135 1762.36,-621.935 1766.56,-616.336"></polygon>
+</g>
+<!-- [root] data.aws_caller_identity.current -->
+<g id="node_61" class="node">
+<polygon fill="none" stroke="black" points="1809,-263.5 1809,-278.5 1915,-278.5 1915,-263.5 1809,-263.5"></polygon>
+<text text-anchor="start" x="1812" y="-269.1" font-family="courier new" font-size="8.00">aws_caller_identity</text>
+<polygon fill="none" stroke="black" points="1809,-248.5 1809,-263.5 1915,-263.5 1915,-248.5 1809,-248.5"></polygon>
+<text text-anchor="start" x="1843.5" y="-254.1" font-family="courier new" font-size="8.00">current</text>
+</g>
+<!-- [root] data.aws_caller_identity.current&#45;&gt;[root] provider.aws -->
+<g id="edge_106" class="edge">
+<path fill="none" stroke="black" d="M1808.91,-252.43C1789.17,-248.747 1766.58,-244.602 1746,-241 1632.55,-221.143 1498,-199.518 1434.17,-189.374"></path>
+<polygon fill="black" stroke="black" points="1434.61,-185.9 1424.18,-187.789 1433.51,-192.813 1434.61,-185.9"></polygon>
+</g>
+<!-- [root] null_resource.email_identities -->
+<g id="node_78" class="node">
+<polygon fill="none" stroke="black" points="2434,-691 2434,-706 2525,-706 2525,-691 2434,-691"></polygon>
+<text text-anchor="start" x="2445" y="-696.6" font-family="courier new" font-size="8.00">null_resource</text>
+<polygon fill="none" stroke="black" points="2434,-676 2434,-691 2525,-691 2525,-676 2434,-676"></polygon>
+<text text-anchor="start" x="2437" y="-681.6" font-family="courier new" font-size="8.00">email_identities</text>
+</g>
+<!-- [root] provider.null -->
+<g id="node_80" class="node">
+<polygon fill="none" stroke="black" points="2398,-595 2398,-610 2447,-610 2447,-595 2398,-595"></polygon>
+<text text-anchor="start" x="2401" y="-600.6" font-family="courier new" font-size="8.00">provider</text>
+<polygon fill="none" stroke="black" points="2398,-580 2398,-595 2447,-595 2447,-580 2398,-580"></polygon>
+<text text-anchor="start" x="2411.5" y="-585.6" font-family="courier new" font-size="8.00">null</text>
+</g>
+<!-- [root] null_resource.email_identities&#45;&gt;[root] provider.null -->
+<g id="edge_159" class="edge">
+<path fill="none" stroke="black" d="M2468.55,-672.759C2459.95,-658.581 2447.63,-638.265 2437.82,-622.095"></path>
+<polygon fill="black" stroke="black" points="2440.57,-619.868 2432.39,-613.132 2434.58,-623.497 2440.57,-619.868"></polygon>
+</g>
+<!-- [root] var.aws_profile -->
+<g id="node_96" class="node">
+<polygon fill="none" stroke="black" points="1365,-106 1365,-121 1429,-121 1429,-106 1365,-106"></polygon>
+<text text-anchor="start" x="1389" y="-111.6" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="1365,-91 1365,-106 1429,-106 1429,-91 1365,-91"></polygon>
+<text text-anchor="start" x="1368" y="-96.6" font-family="courier new" font-size="8.00">aws_profile</text>
+</g>
+<!-- [root] provider.aws&#45;&gt;[root] var.aws_profile -->
+<g id="edge_173" class="edge">
+<path fill="none" stroke="black" d="M1397,-164.221C1397,-155.382 1397,-144.414 1397,-134.452"></path>
+<polygon fill="black" stroke="black" points="1400.5,-134.185 1397,-124.185 1393.5,-134.185 1400.5,-134.185"></polygon>
+</g>
+<!-- [root] provider.template -->
+<g id="node_81" class="node">
+<polygon fill="none" stroke="black" points="2670,-595 2670,-610 2719,-610 2719,-595 2670,-595"></polygon>
+<text text-anchor="start" x="2673" y="-600.6" font-family="courier new" font-size="8.00">provider</text>
+<polygon fill="none" stroke="black" points="2670,-580 2670,-595 2719,-595 2719,-580 2670,-580"></polygon>
+<text text-anchor="start" x="2673" y="-585.6" font-family="courier new" font-size="8.00">template</text>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup) -->
+<g id="node_83" class="node">
+<polygon fill="none" stroke="black" points="1793,-775 1793,-790 1873,-790 1873,-775 1793,-775"></polygon>
+<text text-anchor="start" x="1822" y="-780.6" font-family="courier new" font-size="8.00">meta</text>
+<polygon fill="none" stroke="black" points="1793,-760 1793,-775 1873,-775 1873,-760 1793,-760"></polygon>
+<text text-anchor="start" x="1796" y="-765.6" font-family="courier new" font-size="8.00">count-boundary</text>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] aws_iam_policy_attachment.GD&#45;AWSCodeDeployRole&#45;policy&#45;attachment -->
+<g id="edge_107" class="edge">
+<path fill="none" stroke="black" d="M1792.93,-771.017C1741.89,-767.301 1650.93,-760.958 1573,-757 1131.5,-734.576 1016.44,-784.78 579,-721 563.837,-718.789 547.765,-715.321 532.672,-711.54"></path>
+<polygon fill="black" stroke="black" points="533.473,-708.132 522.915,-709.021 531.723,-714.91 533.473,-708.132"></polygon>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] aws_iam_policy_attachment.GD&#45;AWSCognitoPowerUser&#45;policy&#45;attachment -->
+<g id="edge_108" class="edge">
+<path fill="none" stroke="black" d="M1792.93,-771.157C1741.87,-767.587 1650.91,-761.397 1573,-757 1236.27,-737.997 1148.77,-769.473 815,-721 799.095,-718.69 782.205,-715.186 766.326,-711.404"></path>
+<polygon fill="black" stroke="black" points="767.133,-707.999 756.587,-709.022 765.469,-714.798 767.133,-707.999"></polygon>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] aws_iam_policy_attachment.GD&#45;AmazonEC2ReadOnlyAccess&#45;policy&#45;attachment -->
+<g id="edge_109" class="edge">
+<path fill="none" stroke="black" d="M1792.88,-771.381C1640.86,-761.435 1106.98,-726.295 1071,-721 1054.04,-718.504 1035.99,-714.97 1018.96,-711.225"></path>
+<polygon fill="black" stroke="black" points="1019.59,-707.779 1009.07,-709.001 1018.06,-714.609 1019.59,-707.779"></polygon>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] aws_iam_policy_attachment.GD&#45;AmazonRDSFullAccess&#45;policy&#45;attachment -->
+<g id="edge_110" class="edge">
+<path fill="none" stroke="black" d="M1792.74,-771.916C1704.19,-766.904 1486.08,-752.208 1306,-721 1291.12,-718.42 1275.32,-714.99 1260.32,-711.393"></path>
+<polygon fill="black" stroke="black" points="1261.13,-707.989 1250.59,-709.013 1259.47,-714.789 1261.13,-707.989"></polygon>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] aws_iam_policy_attachment.GD&#45;AmazonS3FullAccess&#45;policy&#45;attachment -->
+<g id="edge_111" class="edge">
+<path fill="none" stroke="black" d="M1792.81,-767.809C1735.4,-758.748 1626.69,-740.788 1535,-721 1521.75,-718.14 1507.7,-714.813 1494.17,-711.454"></path>
+<polygon fill="black" stroke="black" points="1494.97,-708.047 1484.42,-709.008 1493.27,-714.836 1494.97,-708.047"></polygon>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] aws_iam_policy_attachment.GD&#45;AmazonSNSFullAccess&#45;policy&#45;attachment -->
+<g id="edge_112" class="edge">
+<path fill="none" stroke="black" d="M1795.27,-756.81C1767.45,-744.139 1729.45,-726.826 1699.71,-713.281"></path>
+<polygon fill="black" stroke="black" points="1700.93,-709.987 1690.38,-709.027 1698.02,-716.357 1700.93,-709.987"></polygon>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] aws_s3_bucket.log_bucket -->
+<g id="edge_113" class="edge">
+<path fill="none" stroke="black" d="M1855.64,-756.81C1871.48,-744.783 1892.83,-728.573 1910.22,-715.374"></path>
+<polygon fill="black" stroke="black" points="1912.54,-718.002 1918.39,-709.167 1908.31,-712.427 1912.54,-718.002"></polygon>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] null_resource.email_identities -->
+<g id="edge_121" class="edge">
+<path fill="none" stroke="black" d="M1873.36,-772.236C1988.31,-766.912 2315.76,-749.597 2419,-721 2425.82,-719.112 2432.8,-716.471 2439.48,-713.546"></path>
+<polygon fill="black" stroke="black" points="2441.41,-716.506 2449,-709.11 2438.46,-710.162 2441.41,-716.506"></polygon>
+</g>
+<!-- [root] var.app_name -->
+<g id="node_84" class="node">
+<polygon fill="none" stroke="black" points="2326,-691 2326,-706 2375,-706 2375,-691 2326,-691"></polygon>
+<text text-anchor="start" x="2342.5" y="-696.6" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="2326,-676 2326,-691 2375,-691 2375,-676 2326,-676"></polygon>
+<text text-anchor="start" x="2329" y="-681.6" font-family="courier new" font-size="8.00">app_name</text>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] var.app_name -->
+<g id="edge_122" class="edge">
+<path fill="none" stroke="black" d="M1873.2,-772.463C1973.88,-768.155 2234.48,-754.052 2314,-721 2317.54,-719.527 2321.02,-717.593 2324.33,-715.421"></path>
+<polygon fill="black" stroke="black" points="2326.68,-718.035 2332.63,-709.27 2322.51,-712.409 2326.68,-718.035"></polygon>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_policy.reader&#45;policy -->
+<g id="node_64" class="node">
+<polygon fill="none" stroke="black" points="1780,-698 1780,-713 1886,-713 1886,-698 1780,-698"></polygon>
+<text text-anchor="start" x="1783" y="-703.6" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="1780,-683 1780,-698 1886,-698 1886,-683 1780,-683"></polygon>
+<text text-anchor="start" x="1796" y="-688.6" font-family="courier new" font-size="8.00">aws_iam_policy</text>
+<polygon fill="none" stroke="black" points="1780,-668 1780,-683 1886,-683 1886,-668 1780,-668"></polygon>
+<text text-anchor="start" x="1798.5" y="-673.6" font-family="courier new" font-size="8.00">reader-policy</text>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] module.credstash_setup.aws_iam_policy.reader&#45;policy -->
+<g id="edge_114" class="edge">
+<path fill="none" stroke="black" d="M1833,-756.61C1833,-747.133 1833,-735.104 1833,-724.001"></path>
+<polygon fill="black" stroke="black" points="1836.5,-723.752 1833,-713.752 1829.5,-723.753 1836.5,-723.752"></polygon>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_policy.writer&#45;policy -->
+<g id="node_65" class="node">
+<polygon fill="none" stroke="black" points="2199,-698 2199,-713 2305,-713 2305,-698 2199,-698"></polygon>
+<text text-anchor="start" x="2202" y="-703.6" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="2199,-683 2199,-698 2305,-698 2305,-683 2199,-683"></polygon>
+<text text-anchor="start" x="2215" y="-688.6" font-family="courier new" font-size="8.00">aws_iam_policy</text>
+<polygon fill="none" stroke="black" points="2199,-668 2199,-683 2305,-683 2305,-668 2199,-668"></polygon>
+<text text-anchor="start" x="2217.5" y="-673.6" font-family="courier new" font-size="8.00">writer-policy</text>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] module.credstash_setup.aws_iam_policy.writer&#45;policy -->
+<g id="edge_115" class="edge">
+<path fill="none" stroke="black" d="M1873.18,-771.833C1940.14,-767.387 2078.25,-754.644 2190,-721 2193.51,-719.944 2197.07,-718.723 2200.62,-717.39"></path>
+<polygon fill="black" stroke="black" points="2201.97,-720.617 2209.95,-713.643 2199.37,-714.121 2201.97,-720.617"></polygon>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_policy_attachment.Credstash_Reader&#45;policy&#45;attachment -->
+<g id="node_66" class="node">
+<polygon fill="none" stroke="black" points="1997,-698 1997,-713 2182,-713 2182,-698 1997,-698"></polygon>
+<text text-anchor="start" x="2039.5" y="-703.6" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="1997,-683 1997,-698 2182,-698 2182,-683 1997,-683"></polygon>
+<text text-anchor="start" x="2023.5" y="-688.6" font-family="courier new" font-size="8.00">aws_iam_policy_attachment</text>
+<polygon fill="none" stroke="black" points="1997,-668 1997,-683 2182,-683 2182,-668 1997,-668"></polygon>
+<text text-anchor="start" x="2000" y="-673.6" font-family="courier new" font-size="8.00">Credstash_Reader-policy-attachment</text>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] module.credstash_setup.aws_iam_policy_attachment.Credstash_Reader&#45;policy&#45;attachment -->
+<g id="edge_116" class="edge">
+<path fill="none" stroke="black" d="M1873.28,-761.097C1910.42,-749.202 1966.54,-731.227 2012.22,-716.592"></path>
+<polygon fill="black" stroke="black" points="2013.35,-719.907 2021.81,-713.523 2011.21,-713.241 2013.35,-719.907"></polygon>
+</g>
+<!-- [root] module.credstash_setup.data.template_file.credstash&#45;get&#45;cmd -->
+<g id="node_71" class="node">
+<polygon fill="none" stroke="black" points="2667,-706 2667,-721 2773,-721 2773,-706 2667,-706"></polygon>
+<text text-anchor="start" x="2670" y="-711.6" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="2667,-691 2667,-706 2773,-706 2773,-691 2667,-691"></polygon>
+<text text-anchor="start" x="2698.5" y="-696.6" font-family="courier new" font-size="8.00">(M) data</text>
+<polygon fill="none" stroke="black" points="2667,-676 2667,-691 2773,-691 2773,-676 2667,-676"></polygon>
+<text text-anchor="start" x="2685.5" y="-681.6" font-family="courier new" font-size="8.00">template_file</text>
+<polygon fill="none" stroke="black" points="2667,-661 2667,-676 2773,-676 2773,-661 2667,-661"></polygon>
+<text text-anchor="start" x="2675" y="-666.6" font-family="courier new" font-size="8.00">credstash-get-cmd</text>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] module.credstash_setup.data.template_file.credstash&#45;get&#45;cmd -->
+<g id="edge_117" class="edge">
+<path fill="none" stroke="black" d="M1873.11,-773.393C2014.2,-770.958 2487.8,-760.174 2656.95,-720.81"></path>
+<polygon fill="black" stroke="black" points="2657.81,-724.202 2666.69,-718.423 2656.14,-717.404 2657.81,-724.202"></polygon>
+</g>
+<!-- [root] module.credstash_setup.data.template_file.credstash&#45;put&#45;cmd -->
+<g id="node_72" class="node">
+<polygon fill="none" stroke="black" points="2543,-706 2543,-721 2649,-721 2649,-706 2543,-706"></polygon>
+<text text-anchor="start" x="2546" y="-711.6" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="2543,-691 2543,-706 2649,-706 2649,-691 2543,-691"></polygon>
+<text text-anchor="start" x="2574.5" y="-696.6" font-family="courier new" font-size="8.00">(M) data</text>
+<polygon fill="none" stroke="black" points="2543,-676 2543,-691 2649,-691 2649,-676 2543,-676"></polygon>
+<text text-anchor="start" x="2561.5" y="-681.6" font-family="courier new" font-size="8.00">template_file</text>
+<polygon fill="none" stroke="black" points="2543,-661 2543,-676 2649,-676 2649,-661 2543,-661"></polygon>
+<text text-anchor="start" x="2551" y="-666.6" font-family="courier new" font-size="8.00">credstash-put-cmd</text>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] module.credstash_setup.data.template_file.credstash&#45;put&#45;cmd -->
+<g id="edge_118" class="edge">
+<path fill="none" stroke="black" d="M1873.15,-772.829C2002.42,-768.767 2406.76,-753.703 2533,-721 2533.1,-720.974 2533.2,-720.947 2533.31,-720.92"></path>
+<polygon fill="black" stroke="black" points="2534.31,-724.274 2542.86,-718.023 2532.28,-717.575 2534.31,-724.274"></polygon>
+</g>
+<!-- [root] module.sns_lambda_notice.aws_iam_role_policy_attachment.generic_lambda_attach -->
+<g id="node_76" class="node">
+<polygon fill="none" stroke="black" points="0,-698 0,-713 164,-713 164,-698 0,-698"></polygon>
+<text text-anchor="start" x="26.5" y="-703.6" font-family="courier new" font-size="8.00">(M) sns_lambda_notice</text>
+<polygon fill="none" stroke="black" points="0,-683 0,-698 164,-698 164,-683 0,-683"></polygon>
+<text text-anchor="start" x="3" y="-688.6" font-family="courier new" font-size="8.00">aws_iam_role_policy_attachment</text>
+<polygon fill="none" stroke="black" points="0,-668 0,-683 164,-683 164,-668 0,-668"></polygon>
+<text text-anchor="start" x="26.5" y="-673.6" font-family="courier new" font-size="8.00">generic_lambda_attach</text>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] module.sns_lambda_notice.aws_iam_role_policy_attachment.generic_lambda_attach -->
+<g id="edge_119" class="edge">
+<path fill="none" stroke="black" d="M1792.94,-770.887C1741.9,-767.034 1650.95,-760.549 1573,-757 1262.11,-742.845 479.879,-772.764 173,-721 165.918,-719.805 158.628,-718.185 151.402,-716.317"></path>
+<polygon fill="black" stroke="black" points="152.185,-712.902 141.615,-713.633 150.333,-719.653 152.185,-712.902"></polygon>
+</g>
+<!-- [root] module.sns_lambda_notice.aws_iam_role_policy_attachment.publish_sns_attach -->
+<g id="node_77" class="node">
+<polygon fill="none" stroke="black" points="182,-698 182,-713 346,-713 346,-698 182,-698"></polygon>
+<text text-anchor="start" x="208.5" y="-703.6" font-family="courier new" font-size="8.00">(M) sns_lambda_notice</text>
+<polygon fill="none" stroke="black" points="182,-683 182,-698 346,-698 346,-683 182,-683"></polygon>
+<text text-anchor="start" x="185" y="-688.6" font-family="courier new" font-size="8.00">aws_iam_role_policy_attachment</text>
+<polygon fill="none" stroke="black" points="182,-668 182,-683 346,-683 346,-668 182,-668"></polygon>
+<text text-anchor="start" x="216.5" y="-673.6" font-family="courier new" font-size="8.00">publish_sns_attach</text>
+</g>
+<!-- [root] meta.count&#45;boundary (count boundary fixup)&#45;&gt;[root] module.sns_lambda_notice.aws_iam_role_policy_attachment.publish_sns_attach -->
+<g id="edge_120" class="edge">
+<path fill="none" stroke="black" d="M1792.94,-770.935C1741.9,-767.132 1650.94,-760.699 1573,-757 1302.52,-744.164 621.926,-766.552 355,-721 347.921,-719.792 340.632,-718.162 333.407,-716.289"></path>
+<polygon fill="black" stroke="black" points="334.191,-712.874 323.621,-713.599 332.336,-719.624 334.191,-712.874"></polygon>
+</g>
+<!-- [root] provider.aws (close) -->
+<g id="node_95" class="node">
+<polygon fill="none" stroke="black" points="1513,-775 1513,-790 1562,-790 1562,-775 1513,-775"></polygon>
+<text text-anchor="start" x="1516" y="-780.6" font-family="courier new" font-size="8.00">provider</text>
+<polygon fill="none" stroke="black" points="1513,-760 1513,-775 1562,-775 1562,-760 1513,-760"></polygon>
+<text text-anchor="start" x="1529.5" y="-765.6" font-family="courier new" font-size="8.00">aws</text>
+</g>
+<!-- [root] provider.aws (close)&#45;&gt;[root] aws_iam_policy_attachment.GD&#45;AWSCodeDeployRole&#45;policy&#45;attachment -->
+<g id="edge_160" class="edge">
+<path fill="none" stroke="black" d="M1509.74,-774.457C1395.47,-775.959 943.988,-777.775 579,-721 564.245,-718.705 548.614,-715.297 533.861,-711.616"></path>
+<polygon fill="black" stroke="black" points="534.365,-708.132 523.809,-709.035 532.624,-714.912 534.365,-708.132"></polygon>
+</g>
+<!-- [root] provider.aws (close)&#45;&gt;[root] aws_iam_policy_attachment.GD&#45;AWSCognitoPowerUser&#45;policy&#45;attachment -->
+<g id="edge_161" class="edge">
+<path fill="none" stroke="black" d="M1509.93,-773.645C1414.32,-772.046 1083.75,-763.581 815,-721 799.617,-718.563 783.293,-715.119 767.85,-711.453"></path>
+<polygon fill="black" stroke="black" points="768.391,-707.983 757.847,-709.02 766.737,-714.784 768.391,-707.983"></polygon>
+</g>
+<!-- [root] provider.aws (close)&#45;&gt;[root] aws_iam_policy_attachment.GD&#45;AmazonEC2ReadOnlyAccess&#45;policy&#45;attachment -->
+<g id="edge_162" class="edge">
+<path fill="none" stroke="black" d="M1509.8,-771.955C1437.83,-766.318 1236.57,-749.085 1071,-721 1055,-718.286 1038,-714.838 1021.79,-711.274"></path>
+<polygon fill="black" stroke="black" points="1022.33,-707.81 1011.81,-709.045 1020.81,-714.641 1022.33,-707.81"></polygon>
+</g>
+<!-- [root] provider.aws (close)&#45;&gt;[root] aws_iam_policy_attachment.GD&#45;AmazonRDSFullAccess&#45;policy&#45;attachment -->
+<g id="edge_163" class="edge">
+<path fill="none" stroke="black" d="M1509.94,-767.951C1466.76,-758.265 1379.64,-738.573 1306,-721 1293.35,-717.981 1279.94,-714.718 1266.89,-711.508"></path>
+<polygon fill="black" stroke="black" points="1267.55,-708.066 1257.01,-709.069 1265.88,-714.862 1267.55,-708.066"></polygon>
+</g>
+<!-- [root] provider.aws (close)&#45;&gt;[root] aws_iam_policy_attachment.GD&#45;AmazonS3FullAccess&#45;policy&#45;attachment -->
+<g id="edge_164" class="edge">
+<path fill="none" stroke="black" d="M1512.68,-756.81C1495.51,-744.674 1472.32,-728.278 1453.56,-715.014"></path>
+<polygon fill="black" stroke="black" points="1455.47,-712.082 1445.29,-709.167 1451.43,-717.798 1455.47,-712.082"></polygon>
+</g>
+<!-- [root] provider.aws (close)&#45;&gt;[root] aws_iam_policy_attachment.GD&#45;AmazonSNSFullAccess&#45;policy&#45;attachment -->
+<g id="edge_165" class="edge">
+<path fill="none" stroke="black" d="M1561.32,-756.81C1578.49,-744.674 1601.68,-728.278 1620.44,-715.014"></path>
+<polygon fill="black" stroke="black" points="1622.57,-717.798 1628.71,-709.167 1618.53,-712.082 1622.57,-717.798"></polygon>
+</g>
+<!-- [root] provider.aws (close)&#45;&gt;[root] aws_s3_bucket.log_bucket -->
+<g id="edge_166" class="edge">
+<path fill="none" stroke="black" d="M1564.44,-773.757C1625.7,-772.405 1777.46,-764.538 1895,-721 1899.86,-719.202 1904.74,-716.843 1909.42,-714.246"></path>
+<polygon fill="black" stroke="black" points="1911.33,-717.185 1918.11,-709.045 1907.73,-711.179 1911.33,-717.185"></polygon>
+</g>
+<!-- [root] provider.aws (close)&#45;&gt;[root] module.credstash_setup.aws_iam_policy.reader&#45;policy -->
+<g id="edge_167" class="edge">
+<path fill="none" stroke="black" d="M1564.06,-769.729C1608.01,-762.373 1697.33,-745.69 1770,-721 1773.14,-719.935 1776.32,-718.764 1779.52,-717.522"></path>
+<polygon fill="black" stroke="black" points="1781.14,-720.641 1789.07,-713.619 1778.49,-714.161 1781.14,-720.641"></polygon>
+</g>
+<!-- [root] provider.aws (close)&#45;&gt;[root] module.credstash_setup.aws_iam_policy.writer&#45;policy -->
+<g id="edge_168" class="edge">
+<path fill="none" stroke="black" d="M1564.01,-772.077C1683.41,-763.542 2159.25,-729.155 2190,-721 2193.83,-719.984 2197.72,-718.74 2201.58,-717.345"></path>
+<polygon fill="black" stroke="black" points="2203.05,-720.526 2211.08,-713.61 2200.49,-714.012 2203.05,-720.526"></polygon>
+</g>
+<!-- [root] provider.aws (close)&#45;&gt;[root] module.credstash_setup.aws_iam_policy_attachment.Credstash_Reader&#45;policy&#45;attachment -->
+<g id="edge_169" class="edge">
+<path fill="none" stroke="black" d="M1564.12,-772.322C1634.48,-767.643 1828.47,-752.66 1987,-721 1994.22,-719.558 2001.67,-717.86 2009.1,-716.02"></path>
+<polygon fill="black" stroke="black" points="2010.03,-719.396 2018.85,-713.529 2008.29,-712.614 2010.03,-719.396"></polygon>
+</g>
+<!-- [root] module.credstash_setup.data.aws_region.current -->
+<g id="node_70" class="node">
+<polygon fill="none" stroke="black" points="2505,-610 2505,-625 2611,-625 2611,-610 2505,-610"></polygon>
+<text text-anchor="start" x="2508" y="-615.6" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="2505,-595 2505,-610 2611,-610 2611,-595 2505,-595"></polygon>
+<text text-anchor="start" x="2536.5" y="-600.6" font-family="courier new" font-size="8.00">(M) data</text>
+<polygon fill="none" stroke="black" points="2505,-580 2505,-595 2611,-595 2611,-580 2505,-580"></polygon>
+<text text-anchor="start" x="2531.5" y="-585.6" font-family="courier new" font-size="8.00">aws_region</text>
+<polygon fill="none" stroke="black" points="2505,-565 2505,-580 2611,-580 2611,-565 2505,-565"></polygon>
+<text text-anchor="start" x="2539.5" y="-570.6" font-family="courier new" font-size="8.00">current</text>
+</g>
+<!-- [root] provider.aws (close)&#45;&gt;[root] module.credstash_setup.data.aws_region.current -->
+<g id="edge_170" class="edge">
+<path fill="none" stroke="black" d="M1564.04,-772.056C1609.47,-768.81 1704,-762.133 1784,-757 1851.2,-752.688 2331.63,-756.26 2389,-721 2415.3,-704.835 2401.35,-681.98 2424,-661 2444.35,-642.153 2471.17,-627.688 2495.46,-617.242"></path>
+<polygon fill="black" stroke="black" points="2497.09,-620.358 2504.99,-613.294 2494.41,-613.891 2497.09,-620.358"></polygon>
+</g>
+<!-- [root] provider.aws (close)&#45;&gt;[root] module.sns_lambda_notice.aws_iam_role_policy_attachment.generic_lambda_attach -->
+<g id="edge_171" class="edge">
+<path fill="none" stroke="black" d="M1509.88,-773.941C1342.07,-773.424 443.475,-768.452 173,-721 165.926,-719.759 158.641,-718.108 151.419,-716.221"></path>
+<polygon fill="black" stroke="black" points="152.206,-712.807 141.635,-713.518 150.342,-719.554 152.206,-712.807"></polygon>
+</g>
+<!-- [root] provider.aws (close)&#45;&gt;[root] module.sns_lambda_notice.aws_iam_role_policy_attachment.publish_sns_attach -->
+<g id="edge_172" class="edge">
+<path fill="none" stroke="black" d="M1509.84,-773.753C1355.5,-772.203 587.424,-762.492 355,-721 348.2,-719.786 341.204,-718.199 334.255,-716.393"></path>
+<polygon fill="black" stroke="black" points="334.707,-712.888 324.137,-713.608 332.849,-719.637 334.707,-712.888"></polygon>
+</g>
+<!-- [root] provider.null (close) -->
+<g id="node_98" class="node">
+<polygon fill="none" stroke="black" points="2455,-775 2455,-790 2504,-790 2504,-775 2455,-775"></polygon>
+<text text-anchor="start" x="2458" y="-780.6" font-family="courier new" font-size="8.00">provider</text>
+<polygon fill="none" stroke="black" points="2455,-760 2455,-775 2504,-775 2504,-760 2455,-760"></polygon>
+<text text-anchor="start" x="2468.5" y="-765.6" font-family="courier new" font-size="8.00">null</text>
+</g>
+<!-- [root] provider.null (close)&#45;&gt;[root] null_resource.email_identities -->
+<g id="edge_175" class="edge">
+<path fill="none" stroke="black" d="M2479,-756.61C2479,-745.774 2479,-731.601 2479,-719.291"></path>
+<polygon fill="black" stroke="black" points="2482.5,-719.084 2479,-709.084 2475.5,-719.084 2482.5,-719.084"></polygon>
+</g>
+<!-- [root] provider.template (close) -->
+<g id="node_99" class="node">
+<polygon fill="none" stroke="black" points="2572,-775 2572,-790 2621,-790 2621,-775 2572,-775"></polygon>
+<text text-anchor="start" x="2575" y="-780.6" font-family="courier new" font-size="8.00">provider</text>
+<polygon fill="none" stroke="black" points="2572,-760 2572,-775 2621,-775 2621,-760 2572,-760"></polygon>
+<text text-anchor="start" x="2575" y="-765.6" font-family="courier new" font-size="8.00">template</text>
+</g>
+<!-- [root] provider.template (close)&#45;&gt;[root] module.credstash_setup.data.template_file.credstash&#45;get&#45;cmd -->
+<g id="edge_176" class="edge">
+<path fill="none" stroke="black" d="M2621.99,-756.81C2635.18,-748.093 2651.68,-737.177 2667.37,-726.804"></path>
+<polygon fill="black" stroke="black" points="2669.56,-729.549 2675.97,-721.114 2665.7,-723.71 2669.56,-729.549"></polygon>
+</g>
+<!-- [root] provider.template (close)&#45;&gt;[root] module.credstash_setup.data.template_file.credstash&#45;put&#45;cmd -->
+<g id="edge_177" class="edge">
+<path fill="none" stroke="black" d="M2596,-756.61C2596,-749.244 2596,-740.335 2596,-731.518"></path>
+<polygon fill="black" stroke="black" points="2599.5,-731.307 2596,-721.307 2592.5,-731.307 2599.5,-731.307"></polygon>
+</g>
+<!-- [root] provisioner.local&#45;exec (close) -->
+<g id="node_100" class="node">
+<polygon fill="none" stroke="black" points="2370,-775 2370,-790 2434,-790 2434,-775 2370,-775"></polygon>
+<text text-anchor="start" x="2373" y="-780.6" font-family="courier new" font-size="8.00">provisioner</text>
+<polygon fill="none" stroke="black" points="2370,-760 2370,-775 2434,-775 2434,-760 2370,-760"></polygon>
+<text text-anchor="start" x="2375.5" y="-765.6" font-family="courier new" font-size="8.00">local-exec</text>
+</g>
+<!-- [root] provisioner.local&#45;exec (close)&#45;&gt;[root] null_resource.email_identities -->
+<g id="edge_178" class="edge">
+<path fill="none" stroke="black" d="M2418.33,-756.61C2429.22,-745.008 2443.71,-729.58 2455.8,-716.71"></path>
+<polygon fill="black" stroke="black" points="2458.66,-718.77 2462.96,-709.084 2453.56,-713.978 2458.66,-718.77"></polygon>
+</g>
+<!-- [root] root -->
+<g id="node_101" class="node">
+<polygon fill="none" stroke="black" points="2439,-865 2365,-865 2365,-829 2439,-829 2439,-865"></polygon>
+<text text-anchor="middle" x="2402" y="-845.1" font-family="courier new" font-size="8.00">[root] root</text>
+</g>
+<!-- [root] root&#45;&gt;[root] meta.count&#45;boundary (count boundary fixup) -->
+<g id="edge_179" class="edge">
+<path fill="none" stroke="black" d="M2364.67,-841.407C2265.53,-829.211 1995.57,-796 1883.17,-782.172"></path>
+<polygon fill="black" stroke="black" points="1883.46,-778.682 1873.11,-780.934 1882.61,-785.629 1883.46,-778.682"></polygon>
+</g>
+<!-- [root] root&#45;&gt;[root] provider.aws (close) -->
+<g id="edge_180" class="edge">
+<path fill="none" stroke="black" d="M2364.83,-842.992C2223.01,-831.515 1716.74,-790.545 1574.44,-779.03"></path>
+<polygon fill="black" stroke="black" points="1574.33,-775.509 1564.08,-778.191 1573.76,-782.486 1574.33,-775.509"></polygon>
+</g>
+<!-- [root] root&#45;&gt;[root] provider.null (close) -->
+<g id="edge_181" class="edge">
+<path fill="none" stroke="black" d="M2421.03,-828.697C2430.54,-820.05 2442.21,-809.449 2452.57,-800.027"></path>
+<polygon fill="black" stroke="black" points="2455.14,-802.421 2460.19,-793.104 2450.43,-797.241 2455.14,-802.421"></polygon>
+</g>
+<!-- [root] root&#45;&gt;[root] provider.template (close) -->
+<g id="edge_182" class="edge">
+<path fill="none" stroke="black" d="M2439.41,-832.503C2473.88,-820.064 2524.75,-801.709 2559.07,-789.325"></path>
+<polygon fill="black" stroke="black" points="2560.5,-792.53 2568.72,-785.844 2558.12,-785.946 2560.5,-792.53"></polygon>
+</g>
+<!-- [root] root&#45;&gt;[root] provisioner.local&#45;exec (close) -->
+<g id="edge_183" class="edge">
+<path fill="none" stroke="black" d="M2402,-828.697C2402,-820.983 2402,-811.712 2402,-803.112"></path>
+<polygon fill="black" stroke="black" points="2405.5,-803.104 2402,-793.104 2398.5,-803.104 2405.5,-803.104"></polygon>
+</g>
+<!-- [root] var.domain -->
+<g id="node_85" class="node">
+<polygon fill="none" stroke="black" points="2331,-595 2331,-610 2369,-610 2369,-595 2331,-595"></polygon>
+<text text-anchor="start" x="2342" y="-600.6" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="2331,-580 2331,-595 2369,-595 2369,-580 2331,-580"></polygon>
+<text text-anchor="start" x="2334" y="-585.6" font-family="courier new" font-size="8.00">domain</text>
+</g>
+<!-- [root] var.app_name&#45;&gt;[root] var.domain -->
+<g id="edge_184" class="edge">
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M2350,-672.759C2350,-655.798 2350,-630.055 2350,-613.132"></path>
+</g>
+<!-- [root] var.region -->
+<g id="node_97" class="node">
+<polygon fill="none" stroke="black" points="1378,-34 1378,-49 1416,-49 1416,-34 1378,-34"></polygon>
+<text text-anchor="start" x="1389" y="-39.6" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="1378,-19 1378,-34 1416,-34 1416,-19 1378,-19"></polygon>
+<text text-anchor="start" x="1381" y="-24.6" font-family="courier new" font-size="8.00">region</text>
+</g>
+<!-- [root] var.aws_profile&#45;&gt;[root] var.region -->
+<g id="edge_187" class="edge">
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1397,-87.6966C1397,-76.8463 1397,-62.9167 1397,-52.1043"></path>
+</g>
+<!-- [root] module.credstash_setup.aws_dynamodb_table.credstash&#45;db -->
+<g id="node_62" class="node">
+<polygon fill="none" stroke="black" points="1988,-513.5 1988,-528.5 2094,-528.5 2094,-513.5 1988,-513.5"></polygon>
+<text text-anchor="start" x="1991" y="-519.1" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="1988,-498.5 1988,-513.5 2094,-513.5 2094,-498.5 1988,-498.5"></polygon>
+<text text-anchor="start" x="1993.5" y="-504.1" font-family="courier new" font-size="8.00">aws_dynamodb_table</text>
+<polygon fill="none" stroke="black" points="1988,-483.5 1988,-498.5 2094,-498.5 2094,-483.5 1988,-483.5"></polygon>
+<text text-anchor="start" x="2009" y="-489.1" font-family="courier new" font-size="8.00">credstash-db</text>
+</g>
+<!-- [root] module.credstash_setup.aws_dynamodb_table.credstash&#45;db&#45;&gt;[root] provider.aws -->
+<g id="edge_126" class="edge">
+<path fill="none" stroke="black" d="M2017.12,-483.845C1959.86,-433.136 1808.39,-306.075 1659,-241 1583.11,-207.941 1486.29,-193.069 1434.2,-187.066"></path>
+<polygon fill="black" stroke="black" points="1434.41,-183.569 1424.09,-185.949 1433.64,-190.526 1434.41,-183.569"></polygon>
+</g>
+<!-- [root] module.credstash_setup.var.create_db_table -->
+<g id="node_86" class="node">
+<polygon fill="none" stroke="black" points="1988,-432.5 1988,-447.5 2094,-447.5 2094,-432.5 1988,-432.5"></polygon>
+<text text-anchor="start" x="1991" y="-438.1" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="1988,-417.5 1988,-432.5 2094,-432.5 2094,-417.5 1988,-417.5"></polygon>
+<text text-anchor="start" x="2033" y="-423.1" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="1988,-402.5 1988,-417.5 2094,-417.5 2094,-402.5 1988,-402.5"></polygon>
+<text text-anchor="start" x="2001.5" y="-408.1" font-family="courier new" font-size="8.00">create_db_table</text>
+</g>
+<!-- [root] module.credstash_setup.aws_dynamodb_table.credstash&#45;db&#45;&gt;[root] module.credstash_setup.var.create_db_table -->
+<g id="edge_124" class="edge">
+<path fill="none" stroke="black" d="M2041,-483.913C2041,-475.988 2041,-466.843 2041,-458.214"></path>
+<polygon fill="black" stroke="black" points="2044.5,-458.061 2041,-448.061 2037.5,-458.061 2044.5,-458.061"></polygon>
+</g>
+<!-- [root] module.credstash_setup.var.db_table_name -->
+<g id="node_87" class="node">
+<polygon fill="none" stroke="black" points="2586,-432.5 2586,-447.5 2692,-447.5 2692,-432.5 2586,-432.5"></polygon>
+<text text-anchor="start" x="2589" y="-438.1" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="2586,-417.5 2586,-432.5 2692,-432.5 2692,-417.5 2586,-417.5"></polygon>
+<text text-anchor="start" x="2631" y="-423.1" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="2586,-402.5 2586,-417.5 2692,-417.5 2692,-402.5 2586,-402.5"></polygon>
+<text text-anchor="start" x="2604.5" y="-408.1" font-family="courier new" font-size="8.00">db_table_name</text>
+</g>
+<!-- [root] module.credstash_setup.aws_dynamodb_table.credstash&#45;db&#45;&gt;[root] module.credstash_setup.var.db_table_name -->
+<g id="edge_125" class="edge">
+<path fill="none" stroke="black" d="M2094.21,-486.188C2097.17,-485.385 2100.11,-484.647 2103,-484 2271.2,-446.328 2474.81,-433.1 2575.82,-428.643"></path>
+<polygon fill="black" stroke="black" points="2576.02,-432.138 2585.86,-428.214 2575.72,-425.144 2576.02,-432.138"></polygon>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_policy.Credstash_Reader -->
+<g id="node_63" class="node">
+<polygon fill="none" stroke="black" points="2069,-602 2069,-617 2175,-617 2175,-602 2069,-602"></polygon>
+<text text-anchor="start" x="2072" y="-607.6" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="2069,-587 2069,-602 2175,-602 2175,-587 2069,-587"></polygon>
+<text text-anchor="start" x="2085" y="-592.6" font-family="courier new" font-size="8.00">aws_iam_policy</text>
+<polygon fill="none" stroke="black" points="2069,-572 2069,-587 2175,-587 2175,-572 2069,-572"></polygon>
+<text text-anchor="start" x="2079.5" y="-577.6" font-family="courier new" font-size="8.00">Credstash_Reader</text>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_policy.Credstash_Reader&#45;&gt;[root] module.credstash_setup.aws_dynamodb_table.credstash&#45;db -->
+<g id="edge_127" class="edge">
+<path fill="none" stroke="black" d="M2101.56,-572.172C2091.41,-561.334 2079.01,-548.094 2068.08,-536.423"></path>
+<polygon fill="black" stroke="black" points="2070.54,-533.928 2061.15,-529.021 2065.43,-538.713 2070.54,-533.928"></polygon>
+</g>
+<!-- [root] module.credstash_setup.aws_kms_alias.credstash&#45;key -->
+<g id="node_68" class="node">
+<polygon fill="none" stroke="black" points="2112,-513.5 2112,-528.5 2218,-528.5 2218,-513.5 2112,-513.5"></polygon>
+<text text-anchor="start" x="2115" y="-519.1" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="2112,-498.5 2112,-513.5 2218,-513.5 2218,-498.5 2112,-498.5"></polygon>
+<text text-anchor="start" x="2130.5" y="-504.1" font-family="courier new" font-size="8.00">aws_kms_alias</text>
+<polygon fill="none" stroke="black" points="2112,-483.5 2112,-498.5 2218,-498.5 2218,-483.5 2112,-483.5"></polygon>
+<text text-anchor="start" x="2130.5" y="-489.1" font-family="courier new" font-size="8.00">credstash-key</text>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_policy.Credstash_Reader&#45;&gt;[root] module.credstash_setup.aws_kms_alias.credstash&#45;key -->
+<g id="edge_128" class="edge">
+<path fill="none" stroke="black" d="M2132.85,-572.172C2137.98,-561.85 2144.2,-549.349 2149.79,-538.1"></path>
+<polygon fill="black" stroke="black" points="2152.98,-539.534 2154.3,-529.021 2146.72,-536.418 2152.98,-539.534"></polygon>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_policy.reader&#45;policy&#45;&gt;[root] module.credstash_setup.aws_dynamodb_table.credstash&#45;db -->
+<g id="edge_129" class="edge">
+<path fill="none" stroke="black" d="M1787.13,-668.446C1748.86,-650.353 1700.33,-627.116 1699,-625 1684.84,-602.401 1681.78,-585.359 1699,-565 1733.97,-523.657 1888.65,-512.025 1977.54,-508.762"></path>
+<polygon fill="black" stroke="black" points="1977.91,-512.252 1987.78,-508.413 1977.67,-505.256 1977.91,-512.252"></polygon>
+</g>
+<!-- [root] module.credstash_setup.var.create_reader_policy -->
+<g id="node_88" class="node">
+<polygon fill="none" stroke="black" points="1505,-602 1505,-617 1617,-617 1617,-602 1505,-602"></polygon>
+<text text-anchor="start" x="1511" y="-607.6" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="1505,-587 1505,-602 1617,-602 1617,-587 1505,-587"></polygon>
+<text text-anchor="start" x="1553" y="-592.6" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="1505,-572 1505,-587 1617,-587 1617,-572 1505,-572"></polygon>
+<text text-anchor="start" x="1508" y="-577.6" font-family="courier new" font-size="8.00">create_reader_policy</text>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_policy.reader&#45;policy&#45;&gt;[root] module.credstash_setup.var.create_reader_policy -->
+<g id="edge_130" class="edge">
+<path fill="none" stroke="black" d="M1788.67,-668.404C1782.47,-665.736 1776.12,-663.183 1770,-661 1709.89,-639.573 1691.51,-645.262 1631,-625 1627.49,-623.824 1623.9,-622.556 1620.3,-621.23"></path>
+<polygon fill="black" stroke="black" points="1621.36,-617.89 1610.77,-617.61 1618.88,-624.433 1621.36,-617.89"></polygon>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_policy.writer&#45;policy&#45;&gt;[root] module.credstash_setup.aws_dynamodb_table.credstash&#45;db -->
+<g id="edge_131" class="edge">
+<path fill="none" stroke="black" d="M2208.36,-668.48C2202.26,-665.799 2196.02,-663.223 2190,-661 2133.76,-640.227 2100,-669.656 2060,-625 2039.28,-601.867 2036.34,-565.398 2037.44,-539.224"></path>
+<polygon fill="black" stroke="black" points="2040.95,-539.257 2038.1,-529.054 2033.96,-538.81 2040.95,-539.257"></polygon>
+</g>
+<!-- [root] module.credstash_setup.var.create_writer_policy -->
+<g id="node_89" class="node">
+<polygon fill="none" stroke="black" points="2193,-602 2193,-617 2305,-617 2305,-602 2193,-602"></polygon>
+<text text-anchor="start" x="2199" y="-607.6" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="2193,-587 2193,-602 2305,-602 2305,-587 2193,-587"></polygon>
+<text text-anchor="start" x="2241" y="-592.6" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="2193,-572 2193,-587 2305,-587 2305,-572 2193,-572"></polygon>
+<text text-anchor="start" x="2196" y="-577.6" font-family="courier new" font-size="8.00">create_writer_policy</text>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_policy.writer&#45;policy&#45;&gt;[root] module.credstash_setup.var.create_writer_policy -->
+<g id="edge_132" class="edge">
+<path fill="none" stroke="black" d="M2251.3,-668.198C2250.92,-656.216 2250.44,-641.131 2250.02,-627.852"></path>
+<polygon fill="black" stroke="black" points="2253.51,-627.567 2249.69,-617.684 2246.51,-627.79 2253.51,-627.567"></polygon>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_policy_attachment.Credstash_Reader&#45;policy&#45;attachment&#45;&gt;[root] module.credstash_setup.aws_iam_policy.Credstash_Reader -->
+<g id="edge_133" class="edge">
+<path fill="none" stroke="black" d="M2096.65,-668.198C2100.9,-656.097 2106.26,-640.831 2110.96,-627.458"></path>
+<polygon fill="black" stroke="black" points="2114.38,-628.278 2114.39,-617.684 2107.77,-625.96 2114.38,-628.278"></polygon>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_role.CredstashReader -->
+<g id="node_67" class="node">
+<polygon fill="none" stroke="black" points="1907,-602 1907,-617 2013,-617 2013,-602 1907,-602"></polygon>
+<text text-anchor="start" x="1910" y="-607.6" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="1907,-587 1907,-602 2013,-602 2013,-587 1907,-587"></polygon>
+<text text-anchor="start" x="1928" y="-592.6" font-family="courier new" font-size="8.00">aws_iam_role</text>
+<polygon fill="none" stroke="black" points="1907,-572 1907,-587 2013,-587 2013,-572 1907,-572"></polygon>
+<text text-anchor="start" x="1920.5" y="-577.6" font-family="courier new" font-size="8.00">CredstashReader</text>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_policy_attachment.Credstash_Reader&#45;policy&#45;attachment&#45;&gt;[root] module.credstash_setup.aws_iam_role.CredstashReader -->
+<g id="edge_134" class="edge">
+<path fill="none" stroke="black" d="M2059.4,-668.435C2041.18,-655.155 2017.64,-637.998 1998.04,-623.716"></path>
+<polygon fill="black" stroke="black" points="2000.05,-620.851 1989.9,-617.791 1995.92,-626.509 2000.05,-620.851"></polygon>
+</g>
+<!-- [root] module.credstash_setup.var.additional_roles -->
+<g id="node_90" class="node">
+<polygon fill="none" stroke="black" points="1783,-602 1783,-617 1889,-617 1889,-602 1783,-602"></polygon>
+<text text-anchor="start" x="1786" y="-607.6" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="1783,-587 1783,-602 1889,-602 1889,-587 1783,-587"></polygon>
+<text text-anchor="start" x="1828" y="-592.6" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="1783,-572 1783,-587 1889,-587 1889,-572 1783,-572"></polygon>
+<text text-anchor="start" x="1793.5" y="-577.6" font-family="courier new" font-size="8.00">additional_roles</text>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_policy_attachment.Credstash_Reader&#45;policy&#45;attachment&#45;&gt;[root] module.credstash_setup.var.additional_roles -->
+<g id="edge_135" class="edge">
+<path fill="none" stroke="black" d="M2019.82,-668.481C1983.25,-656.598 1937.8,-641.026 1898,-625 1895.36,-623.939 1892.68,-622.823 1889.98,-621.672"></path>
+<polygon fill="black" stroke="black" points="1891.35,-618.45 1880.78,-617.651 1888.54,-624.864 1891.35,-618.45"></polygon>
+</g>
+<!-- [root] module.credstash_setup.var.current_account_id -->
+<g id="node_91" class="node">
+<polygon fill="none" stroke="black" points="1907,-351.5 1907,-366.5 2013,-366.5 2013,-351.5 1907,-351.5"></polygon>
+<text text-anchor="start" x="1910" y="-357.1" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="1907,-336.5 1907,-351.5 2013,-351.5 2013,-336.5 1907,-336.5"></polygon>
+<text text-anchor="start" x="1952" y="-342.1" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="1907,-321.5 1907,-336.5 2013,-336.5 2013,-321.5 1907,-321.5"></polygon>
+<text text-anchor="start" x="1912.5" y="-327.1" font-family="courier new" font-size="8.00">current_account_id</text>
+</g>
+<!-- [root] module.credstash_setup.aws_iam_role.CredstashReader&#45;&gt;[root] module.credstash_setup.var.current_account_id -->
+<g id="edge_136" class="edge">
+<path fill="none" stroke="black" d="M1960,-572.382C1960,-528.506 1960,-428.821 1960,-377.439"></path>
+<polygon fill="black" stroke="black" points="1963.5,-377.245 1960,-367.245 1956.5,-377.245 1963.5,-377.245"></polygon>
+</g>
+<!-- [root] module.credstash_setup.aws_kms_key.credstash&#45;key -->
+<g id="node_69" class="node">
+<polygon fill="none" stroke="black" points="2112,-432.5 2112,-447.5 2218,-447.5 2218,-432.5 2112,-432.5"></polygon>
+<text text-anchor="start" x="2115" y="-438.1" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="2112,-417.5 2112,-432.5 2218,-432.5 2218,-417.5 2112,-417.5"></polygon>
+<text text-anchor="start" x="2136" y="-423.1" font-family="courier new" font-size="8.00">aws_kms_key</text>
+<polygon fill="none" stroke="black" points="2112,-402.5 2112,-417.5 2218,-417.5 2218,-402.5 2112,-402.5"></polygon>
+<text text-anchor="start" x="2130.5" y="-408.1" font-family="courier new" font-size="8.00">credstash-key</text>
+</g>
+<!-- [root] module.credstash_setup.aws_kms_alias.credstash&#45;key&#45;&gt;[root] module.credstash_setup.aws_kms_key.credstash&#45;key -->
+<g id="edge_137" class="edge">
+<path fill="none" stroke="black" d="M2165,-483.913C2165,-475.988 2165,-466.843 2165,-458.214"></path>
+<polygon fill="black" stroke="black" points="2168.5,-458.061 2165,-448.061 2161.5,-458.061 2168.5,-458.061"></polygon>
+</g>
+<!-- [root] module.credstash_setup.aws_kms_key.credstash&#45;key&#45;&gt;[root] module.credstash_setup.var.current_account_id -->
+<g id="edge_139" class="edge">
+<path fill="none" stroke="black" d="M2111.94,-404.053C2084.65,-393.538 2051.22,-380.654 2022.67,-369.652"></path>
+<polygon fill="black" stroke="black" points="2023.78,-366.329 2013.19,-365.999 2021.27,-372.86 2023.78,-366.329"></polygon>
+</g>
+<!-- [root] module.credstash_setup.var.create_kms_key -->
+<g id="node_92" class="node">
+<polygon fill="none" stroke="black" points="2112,-351.5 2112,-366.5 2218,-366.5 2218,-351.5 2112,-351.5"></polygon>
+<text text-anchor="start" x="2115" y="-357.1" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="2112,-336.5 2112,-351.5 2218,-351.5 2218,-336.5 2112,-336.5"></polygon>
+<text text-anchor="start" x="2157" y="-342.1" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="2112,-321.5 2112,-336.5 2218,-336.5 2218,-321.5 2112,-321.5"></polygon>
+<text text-anchor="start" x="2128" y="-327.1" font-family="courier new" font-size="8.00">create_kms_key</text>
+</g>
+<!-- [root] module.credstash_setup.aws_kms_key.credstash&#45;key&#45;&gt;[root] module.credstash_setup.var.create_kms_key -->
+<g id="edge_138" class="edge">
+<path fill="none" stroke="black" d="M2165,-402.913C2165,-394.988 2165,-385.843 2165,-377.214"></path>
+<polygon fill="black" stroke="black" points="2168.5,-377.061 2165,-367.061 2161.5,-377.061 2168.5,-377.061"></polygon>
+</g>
+<!-- [root] module.credstash_setup.data.aws_region.current&#45;&gt;[root] provider.aws -->
+<g id="edge_142" class="edge">
+<path fill="none" stroke="black" d="M2504.72,-568.399C2415.61,-525.177 2246,-441.005 2246,-426.5 2246,-426.5 2246,-426.5 2246,-343.5 2246,-235.445 2793.63,-403.696 1924,-241 1742.06,-206.962 1520.74,-190.917 1434.2,-185.602"></path>
+<polygon fill="black" stroke="black" points="1434.28,-182.101 1424.09,-184.993 1433.86,-189.088 1434.28,-182.101"></polygon>
+</g>
+<!-- [root] module.credstash_setup.data.template_file.credstash&#45;get&#45;cmd&#45;&gt;[root] provider.template -->
+<g id="edge_145" class="edge">
+<path fill="none" stroke="black" d="M2711.92,-660.773C2708.57,-648.685 2704.72,-634.757 2701.45,-622.921"></path>
+<polygon fill="black" stroke="black" points="2704.78,-621.862 2698.75,-613.157 2698.04,-623.729 2704.78,-621.862"></polygon>
+</g>
+<!-- [root] module.credstash_setup.data.template_file.credstash&#45;get&#45;cmd&#45;&gt;[root] module.credstash_setup.data.aws_region.current -->
+<g id="edge_143" class="edge">
+<path fill="none" stroke="black" d="M2669.63,-660.773C2652.94,-651.089 2634.22,-640.225 2616.94,-630.202"></path>
+<polygon fill="black" stroke="black" points="2618.47,-627.039 2608.06,-625.047 2614.95,-633.093 2618.47,-627.039"></polygon>
+</g>
+<!-- [root] module.credstash_setup.data.template_file.credstash&#45;get&#45;cmd&#45;&gt;[root] module.credstash_setup.var.db_table_name -->
+<g id="edge_144" class="edge">
+<path fill="none" stroke="black" d="M2728.25,-660.823C2734.14,-635.077 2739.51,-596.808 2730,-565 2717.52,-523.283 2687.99,-482.485 2665.93,-456.1"></path>
+<polygon fill="black" stroke="black" points="2668.51,-453.725 2659.36,-448.389 2663.18,-458.268 2668.51,-453.725"></polygon>
+</g>
+<!-- [root] module.credstash_setup.data.template_file.credstash&#45;put&#45;cmd&#45;&gt;[root] provider.template -->
+<g id="edge_149" class="edge">
+<path fill="none" stroke="black" d="M2626.47,-660.773C2640.09,-647.708 2655.95,-632.494 2668.88,-620.095"></path>
+<polygon fill="black" stroke="black" points="2671.32,-622.606 2676.11,-613.157 2666.47,-617.554 2671.32,-622.606"></polygon>
+</g>
+<!-- [root] module.credstash_setup.data.template_file.credstash&#45;put&#45;cmd&#45;&gt;[root] module.credstash_setup.aws_kms_alias.credstash&#45;key -->
+<g id="edge_146" class="edge">
+<path fill="none" stroke="black" d="M2542.98,-661.487C2526.8,-651.285 2509.68,-638.844 2496,-625 2473.81,-602.549 2484.37,-582.354 2458,-565 2373.04,-509.082 2330.93,-552.607 2232,-529 2230.73,-528.697 2229.45,-528.382 2228.16,-528.056"></path>
+<polygon fill="black" stroke="black" points="2228.75,-524.591 2218.19,-525.375 2226.94,-531.351 2228.75,-524.591"></polygon>
+</g>
+<!-- [root] module.credstash_setup.data.template_file.credstash&#45;put&#45;cmd&#45;&gt;[root] module.credstash_setup.data.aws_region.current -->
+<g id="edge_147" class="edge">
+<path fill="none" stroke="black" d="M2584.18,-660.773C2580.82,-652.462 2577.11,-643.28 2573.57,-634.508"></path>
+<polygon fill="black" stroke="black" points="2576.8,-633.168 2569.81,-625.209 2570.31,-635.792 2576.8,-633.168"></polygon>
+</g>
+<!-- [root] module.credstash_setup.data.template_file.credstash&#45;put&#45;cmd&#45;&gt;[root] module.credstash_setup.var.db_table_name -->
+<g id="edge_148" class="edge">
+<path fill="none" stroke="black" d="M2608.64,-660.72C2612.9,-649.711 2617.27,-636.962 2620,-625 2633.21,-567.188 2637.25,-497.869 2638.47,-458.327"></path>
+<polygon fill="black" stroke="black" points="2641.97,-458.324 2638.75,-448.233 2634.98,-458.135 2641.97,-458.324"></polygon>
+</g>
+<!-- [root] module.sns_lambda_notice.aws_iam_policy.generic_lambda_policy -->
+<g id="node_73" class="node">
+<polygon fill="none" stroke="black" points="48,-602 48,-617 165,-617 165,-602 48,-602"></polygon>
+<text text-anchor="start" x="51" y="-607.6" font-family="courier new" font-size="8.00">(M) sns_lambda_notice</text>
+<polygon fill="none" stroke="black" points="48,-587 48,-602 165,-602 165,-587 48,-587"></polygon>
+<text text-anchor="start" x="69.5" y="-592.6" font-family="courier new" font-size="8.00">aws_iam_policy</text>
+<polygon fill="none" stroke="black" points="48,-572 48,-587 165,-587 165,-572 48,-572"></polygon>
+<text text-anchor="start" x="51" y="-577.6" font-family="courier new" font-size="8.00">generic_lambda_policy</text>
+</g>
+<!-- [root] module.sns_lambda_notice.aws_iam_policy.generic_lambda_policy&#45;&gt;[root] provider.aws -->
+<g id="edge_152" class="edge">
+<path fill="none" stroke="black" d="M155.68,-572.335C207.418,-546.016 281,-496.313 281,-426.5 281,-426.5 281,-426.5 281,-343.5 281,-234.017 398.833,-267.743 505,-241 670.71,-199.259 1211.49,-186.781 1359.34,-184.109"></path>
+<polygon fill="black" stroke="black" points="1359.76,-187.602 1369.69,-183.927 1359.63,-180.604 1359.76,-187.602"></polygon>
+</g>
+<!-- [root] module.sns_lambda_notice.aws_iam_policy.publish_sns_policy -->
+<g id="node_74" class="node">
+<polygon fill="none" stroke="black" points="472,-602 472,-617 589,-617 589,-602 472,-602"></polygon>
+<text text-anchor="start" x="475" y="-607.6" font-family="courier new" font-size="8.00">(M) sns_lambda_notice</text>
+<polygon fill="none" stroke="black" points="472,-587 472,-602 589,-602 589,-587 472,-587"></polygon>
+<text text-anchor="start" x="493.5" y="-592.6" font-family="courier new" font-size="8.00">aws_iam_policy</text>
+<polygon fill="none" stroke="black" points="472,-572 472,-587 589,-587 589,-572 472,-572"></polygon>
+<text text-anchor="start" x="483" y="-577.6" font-family="courier new" font-size="8.00">publish_sns_policy</text>
+</g>
+<!-- [root] module.sns_lambda_notice.aws_iam_policy.publish_sns_policy&#45;&gt;[root] provider.aws -->
+<g id="edge_153" class="edge">
+<path fill="none" stroke="black" d="M588.634,-578.989C656.777,-557.599 760,-511.216 760,-426.5 760,-426.5 760,-426.5 760,-343.5 760,-219.159 1222.32,-190.552 1359.24,-184.807"></path>
+<polygon fill="black" stroke="black" points="1359.78,-188.288 1369.63,-184.389 1359.5,-181.293 1359.78,-188.288"></polygon>
+</g>
+<!-- [root] module.sns_lambda_notice.aws_iam_role.lambda_sns_publish -->
+<g id="node_75" class="node">
+<polygon fill="none" stroke="black" points="206,-602 206,-617 323,-617 323,-602 206,-602"></polygon>
+<text text-anchor="start" x="209" y="-607.6" font-family="courier new" font-size="8.00">(M) sns_lambda_notice</text>
+<polygon fill="none" stroke="black" points="206,-587 206,-602 323,-602 323,-587 206,-587"></polygon>
+<text text-anchor="start" x="232.5" y="-592.6" font-family="courier new" font-size="8.00">aws_iam_role</text>
+<polygon fill="none" stroke="black" points="206,-572 206,-587 323,-587 323,-572 206,-572"></polygon>
+<text text-anchor="start" x="217" y="-577.6" font-family="courier new" font-size="8.00">lambda_sns_publish</text>
+</g>
+<!-- [root] module.sns_lambda_notice.aws_iam_role.lambda_sns_publish&#45;&gt;[root] provider.aws -->
+<g id="edge_154" class="edge">
+<path fill="none" stroke="black" d="M322.676,-578.817C390.525,-557.305 493,-510.853 493,-426.5 493,-426.5 493,-426.5 493,-343.5 493,-199.651 659.286,-270.864 800,-241 1008.41,-196.768 1265.06,-186.51 1359.69,-184.174"></path>
+<polygon fill="black" stroke="black" points="1359.98,-187.668 1369.89,-183.937 1359.82,-180.67 1359.98,-187.668"></polygon>
+</g>
+<!-- [root] module.sns_lambda_notice.aws_iam_role_policy_attachment.generic_lambda_attach&#45;&gt;[root] module.sns_lambda_notice.aws_iam_policy.generic_lambda_policy -->
+<g id="edge_155" class="edge">
+<path fill="none" stroke="black" d="M87.5664,-668.198C90.6561,-656.097 94.5537,-640.831 97.9682,-627.458"></path>
+<polygon fill="black" stroke="black" points="101.381,-628.239 100.464,-617.684 94.5987,-626.507 101.381,-628.239"></polygon>
+</g>
+<!-- [root] module.sns_lambda_notice.aws_iam_role_policy_attachment.generic_lambda_attach&#45;&gt;[root] module.sns_lambda_notice.aws_iam_role.lambda_sns_publish -->
+<g id="edge_156" class="edge">
+<path fill="none" stroke="black" d="M123.754,-668.435C150.365,-654.691 185.014,-636.795 213.214,-622.23"></path>
+<polygon fill="black" stroke="black" points="214.846,-625.326 222.125,-617.628 211.634,-619.107 214.846,-625.326"></polygon>
+</g>
+<!-- [root] module.sns_lambda_notice.aws_iam_role_policy_attachment.publish_sns_attach&#45;&gt;[root] module.sns_lambda_notice.aws_iam_policy.publish_sns_policy -->
+<g id="edge_157" class="edge">
+<path fill="none" stroke="black" d="M325.026,-668.435C365.723,-654.053 419.287,-635.124 461.453,-620.223"></path>
+<polygon fill="black" stroke="black" points="462.825,-623.451 471.087,-616.819 460.492,-616.851 462.825,-623.451"></polygon>
+</g>
+<!-- [root] module.sns_lambda_notice.aws_iam_role_policy_attachment.publish_sns_attach&#45;&gt;[root] module.sns_lambda_notice.aws_iam_role.lambda_sns_publish -->
+<g id="edge_158" class="edge">
+<path fill="none" stroke="black" d="M264,-668.198C264,-656.216 264,-641.131 264,-627.852"></path>
+<polygon fill="black" stroke="black" points="267.5,-627.683 264,-617.684 260.5,-627.684 267.5,-627.683"></polygon>
+</g>
+<!-- [root] module.credstash_setup.var.additional_roles&#45;&gt;[root] aws_iam_role.GD&#45;GeodesyWebServicesD&#45;WebServerRole -->
+<g id="edge_150" class="edge">
+<path fill="none" stroke="black" d="M1796.37,-572.487C1790.02,-569.638 1783.43,-567.013 1777,-565 1687.88,-537.088 1582.62,-522.509 1505.51,-515.028"></path>
+<polygon fill="black" stroke="black" points="1505.58,-511.519 1495.29,-514.062 1504.92,-518.488 1505.58,-511.519"></polygon>
+</g>
+<!-- [root] module.credstash_setup.var.current_account_id&#45;&gt;[root] data.aws_caller_identity.current -->
+<g id="edge_151" class="edge">
+<path fill="none" stroke="black" d="M1933.22,-321.913C1920.17,-311.395 1904.46,-298.728 1891.12,-287.971"></path>
+<polygon fill="black" stroke="black" points="1893.14,-285.108 1883.16,-281.557 1888.75,-290.558 1893.14,-285.108"></polygon>
+</g>
+<!-- [root] module.credstash_setup.var.enable_key_rotation -->
+<g id="node_93" class="node">
+<polygon fill="none" stroke="black" points="2274,-270.5 2274,-285.5 2380,-285.5 2380,-270.5 2274,-270.5"></polygon>
+<text text-anchor="start" x="2277" y="-276.1" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="2274,-255.5 2274,-270.5 2380,-270.5 2380,-255.5 2274,-255.5"></polygon>
+<text text-anchor="start" x="2319" y="-261.1" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="2274,-240.5 2274,-255.5 2380,-255.5 2380,-240.5 2274,-240.5"></polygon>
+<text text-anchor="start" x="2277" y="-246.1" font-family="courier new" font-size="8.00">enable_key_rotation</text>
+</g>
+<!-- [root] module.credstash_setup.var.create_kms_key&#45;&gt;[root] module.credstash_setup.var.enable_key_rotation -->
+<g id="edge_185" class="edge">
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M2209.27,-321.913C2232.13,-310.766 2259.94,-297.204 2282.79,-286.061"></path>
+</g>
+<!-- [root] module.credstash_setup.var.kms_key_name -->
+<g id="node_94" class="node">
+<polygon fill="none" stroke="black" points="2274,-189.5 2274,-204.5 2380,-204.5 2380,-189.5 2274,-189.5"></polygon>
+<text text-anchor="start" x="2277" y="-195.1" font-family="courier new" font-size="8.00">(M) credstash_setup</text>
+<polygon fill="none" stroke="black" points="2274,-174.5 2274,-189.5 2380,-189.5 2380,-174.5 2274,-174.5"></polygon>
+<text text-anchor="start" x="2319" y="-180.1" font-family="courier new" font-size="8.00">var</text>
+<polygon fill="none" stroke="black" points="2274,-159.5 2274,-174.5 2380,-174.5 2380,-159.5 2274,-159.5"></polygon>
+<text text-anchor="start" x="2295" y="-165.1" font-family="courier new" font-size="8.00">kms_key_name</text>
+</g>
+<!-- [root] module.credstash_setup.var.enable_key_rotation&#45;&gt;[root] module.credstash_setup.var.kms_key_name -->
+<g id="edge_186" class="edge">
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M2327,-240.913C2327,-229.766 2327,-216.204 2327,-205.061"></path>
+</g>
+</g>
+</svg>
